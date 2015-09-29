@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */; };
+		DAA44B141BBAFC440045B7F0 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B131BBAFC440045B7F0 /* MapController.swift */; };
+		DAA44B171BBAFC440045B7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B151BBAFC440045B7F0 /* Main.storyboard */; };
+		DAA44B191BBAFC440045B7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B181BBAFC440045B7F0 /* Assets.xcassets */; };
+		DAA44B1C1BBAFC440045B7F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B1A1BBAFC440045B7F0 /* LaunchScreen.storyboard */; };
+		DAA44B271BBAFC440045B7F0 /* KampusSGGW_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B261BBAFC440045B7F0 /* KampusSGGW_iosTests.swift */; };
+		DAA44B321BBAFC440045B7F0 /* KampusSGGW_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B311BBAFC440045B7F0 /* KampusSGGW_iosUITests.swift */; };
+		DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B471BBB03D90045B7F0 /* Building.swift */; settings = {ASSET_TAGS = (); }; };
+		DAA44B4A1BBB0C680045B7F0 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B491BBB0C680045B7F0 /* Buildings.swift */; settings = {ASSET_TAGS = (); }; };
+		DAA44B4C1BBB0CE70045B7F0 /* Buildings.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAA44B231BBAFC440045B7F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA44B061BBAFC440045B7F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA44B0D1BBAFC440045B7F0;
+			remoteInfo = KampusSGGW_ios;
+		};
+		DAA44B2E1BBAFC440045B7F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA44B061BBAFC440045B7F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA44B0D1BBAFC440045B7F0;
+			remoteInfo = KampusSGGW_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAA44B0E1BBAFC440045B7F0 /* KampusSGGW_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KampusSGGW_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAA44B131BBAFC440045B7F0 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		DAA44B161BBAFC440045B7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAA44B181BBAFC440045B7F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAA44B1B1BBAFC440045B7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAA44B1D1BBAFC440045B7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA44B221BBAFC440045B7F0 /* KampusSGGW_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KampusSGGW_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA44B261BBAFC440045B7F0 /* KampusSGGW_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KampusSGGW_iosTests.swift; sourceTree = "<group>"; };
+		DAA44B281BBAFC440045B7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA44B2D1BBAFC440045B7F0 /* KampusSGGW_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KampusSGGW_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA44B311BBAFC440045B7F0 /* KampusSGGW_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KampusSGGW_iosUITests.swift; sourceTree = "<group>"; };
+		DAA44B331BBAFC440045B7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA44B471BBB03D90045B7F0 /* Building.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		DAA44B491BBB0C680045B7F0 /* Buildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
+		DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buildings.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAA44B0B1BBAFC440045B7F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA44B1F1BBAFC440045B7F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA44B2A1BBAFC440045B7F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAA44B051BBAFC440045B7F0 = {
+			isa = PBXGroup;
+			children = (
+				DAA44B101BBAFC440045B7F0 /* KampusSGGW_ios */,
+				DAA44B251BBAFC440045B7F0 /* KampusSGGW_iosTests */,
+				DAA44B301BBAFC440045B7F0 /* KampusSGGW_iosUITests */,
+				DAA44B0F1BBAFC440045B7F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAA44B0F1BBAFC440045B7F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B0E1BBAFC440045B7F0 /* KampusSGGW_ios.app */,
+				DAA44B221BBAFC440045B7F0 /* KampusSGGW_iosTests.xctest */,
+				DAA44B2D1BBAFC440045B7F0 /* KampusSGGW_iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAA44B101BBAFC440045B7F0 /* KampusSGGW_ios */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B3F1BBAFD4B0045B7F0 /* AppDelegate */,
+				DAA44B441BBAFDA10045B7F0 /* Supporting Files */,
+				DAA44B401BBAFD690045B7F0 /* Controllers */,
+				DAA44B431BBAFD8B0045B7F0 /* Views */,
+				DAA44B421BBAFD830045B7F0 /* Resources */,
+				DAA44B411BBAFD710045B7F0 /* Models */,
+				DAA44B451BBAFDB00045B7F0 /* Utils */,
+			);
+			path = KampusSGGW_ios;
+			sourceTree = "<group>";
+		};
+		DAA44B251BBAFC440045B7F0 /* KampusSGGW_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B261BBAFC440045B7F0 /* KampusSGGW_iosTests.swift */,
+				DAA44B281BBAFC440045B7F0 /* Info.plist */,
+			);
+			path = KampusSGGW_iosTests;
+			sourceTree = "<group>";
+		};
+		DAA44B301BBAFC440045B7F0 /* KampusSGGW_iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B311BBAFC440045B7F0 /* KampusSGGW_iosUITests.swift */,
+				DAA44B331BBAFC440045B7F0 /* Info.plist */,
+			);
+			path = KampusSGGW_iosUITests;
+			sourceTree = "<group>";
+		};
+		DAA44B3F1BBAFD4B0045B7F0 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DAA44B401BBAFD690045B7F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B461BBAFDC10045B7F0 /* MapController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DAA44B411BBAFD710045B7F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B471BBB03D90045B7F0 /* Building.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DAA44B421BBAFD830045B7F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B181BBAFC440045B7F0 /* Assets.xcassets */,
+				DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DAA44B431BBAFD8B0045B7F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B151BBAFC440045B7F0 /* Main.storyboard */,
+				DAA44B1A1BBAFC440045B7F0 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DAA44B441BBAFDA10045B7F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B1D1BBAFC440045B7F0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAA44B451BBAFDB00045B7F0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B491BBB0C680045B7F0 /* Buildings.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		DAA44B461BBAFDC10045B7F0 /* MapController */ = {
+			isa = PBXGroup;
+			children = (
+				DAA44B131BBAFC440045B7F0 /* MapController.swift */,
+			);
+			name = MapController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA44B0D1BBAFC440045B7F0 /* KampusSGGW_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA44B361BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_ios" */;
+			buildPhases = (
+				DAA44B0A1BBAFC440045B7F0 /* Sources */,
+				DAA44B0B1BBAFC440045B7F0 /* Frameworks */,
+				DAA44B0C1BBAFC440045B7F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KampusSGGW_ios;
+			productName = KampusSGGW_ios;
+			productReference = DAA44B0E1BBAFC440045B7F0 /* KampusSGGW_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAA44B211BBAFC440045B7F0 /* KampusSGGW_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA44B391BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_iosTests" */;
+			buildPhases = (
+				DAA44B1E1BBAFC440045B7F0 /* Sources */,
+				DAA44B1F1BBAFC440045B7F0 /* Frameworks */,
+				DAA44B201BBAFC440045B7F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA44B241BBAFC440045B7F0 /* PBXTargetDependency */,
+			);
+			name = KampusSGGW_iosTests;
+			productName = KampusSGGW_iosTests;
+			productReference = DAA44B221BBAFC440045B7F0 /* KampusSGGW_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAA44B2C1BBAFC440045B7F0 /* KampusSGGW_iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA44B3C1BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_iosUITests" */;
+			buildPhases = (
+				DAA44B291BBAFC440045B7F0 /* Sources */,
+				DAA44B2A1BBAFC440045B7F0 /* Frameworks */,
+				DAA44B2B1BBAFC440045B7F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA44B2F1BBAFC440045B7F0 /* PBXTargetDependency */,
+			);
+			name = KampusSGGW_iosUITests;
+			productName = KampusSGGW_iosUITests;
+			productReference = DAA44B2D1BBAFC440045B7F0 /* KampusSGGW_iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAA44B061BBAFC440045B7F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = QexT;
+				TargetAttributes = {
+					DAA44B0D1BBAFC440045B7F0 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = QDYUNR2JCR;
+					};
+					DAA44B211BBAFC440045B7F0 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = QDYUNR2JCR;
+						TestTargetID = DAA44B0D1BBAFC440045B7F0;
+					};
+					DAA44B2C1BBAFC440045B7F0 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = QDYUNR2JCR;
+						TestTargetID = DAA44B0D1BBAFC440045B7F0;
+					};
+				};
+			};
+			buildConfigurationList = DAA44B091BBAFC440045B7F0 /* Build configuration list for PBXProject "KampusSGGW_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAA44B051BBAFC440045B7F0;
+			productRefGroup = DAA44B0F1BBAFC440045B7F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA44B0D1BBAFC440045B7F0 /* KampusSGGW_ios */,
+				DAA44B211BBAFC440045B7F0 /* KampusSGGW_iosTests */,
+				DAA44B2C1BBAFC440045B7F0 /* KampusSGGW_iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAA44B0C1BBAFC440045B7F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA44B1C1BBAFC440045B7F0 /* LaunchScreen.storyboard in Resources */,
+				DAA44B191BBAFC440045B7F0 /* Assets.xcassets in Resources */,
+				DAA44B171BBAFC440045B7F0 /* Main.storyboard in Resources */,
+				DAA44B4C1BBB0CE70045B7F0 /* Buildings.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA44B201BBAFC440045B7F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA44B2B1BBAFC440045B7F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAA44B0A1BBAFC440045B7F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA44B141BBAFC440045B7F0 /* MapController.swift in Sources */,
+				DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */,
+				DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */,
+				DAA44B4A1BBB0C680045B7F0 /* Buildings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA44B1E1BBAFC440045B7F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA44B271BBAFC440045B7F0 /* KampusSGGW_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA44B291BBAFC440045B7F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA44B321BBAFC440045B7F0 /* KampusSGGW_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAA44B241BBAFC440045B7F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA44B0D1BBAFC440045B7F0 /* KampusSGGW_ios */;
+			targetProxy = DAA44B231BBAFC440045B7F0 /* PBXContainerItemProxy */;
+		};
+		DAA44B2F1BBAFC440045B7F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA44B0D1BBAFC440045B7F0 /* KampusSGGW_ios */;
+			targetProxy = DAA44B2E1BBAFC440045B7F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAA44B151BBAFC440045B7F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA44B161BBAFC440045B7F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAA44B1A1BBAFC440045B7F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA44B1B1BBAFC440045B7F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAA44B341BBAFC440045B7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAA44B351BBAFC440045B7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAA44B371BBAFC440045B7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KampusSGGW_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAA44B381BBAFC440045B7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KampusSGGW_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DAA44B3A1BBAFC440045B7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KampusSGGW_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KampusSGGW_ios.app/KampusSGGW_ios";
+			};
+			name = Debug;
+		};
+		DAA44B3B1BBAFC440045B7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KampusSGGW_iosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KampusSGGW_ios.app/KampusSGGW_ios";
+			};
+			name = Release;
+		};
+		DAA44B3D1BBAFC440045B7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KampusSGGW_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KampusSGGW_ios;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DAA44B3E1BBAFC440045B7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KampusSGGW_iosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KampusSGGW_ios;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAA44B091BBAFC440045B7F0 /* Build configuration list for PBXProject "KampusSGGW_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA44B341BBAFC440045B7F0 /* Debug */,
+				DAA44B351BBAFC440045B7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA44B361BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA44B371BBAFC440045B7F0 /* Debug */,
+				DAA44B381BBAFC440045B7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA44B391BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA44B3A1BBAFC440045B7F0 /* Debug */,
+				DAA44B3B1BBAFC440045B7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA44B3C1BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA44B3D1BBAFC440045B7F0 /* Debug */,
+				DAA44B3E1BBAFC440045B7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAA44B061BBAFC440045B7F0 /* Project object */;
+}

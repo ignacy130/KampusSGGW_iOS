@@ -17,6 +17,7 @@
 		DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B471BBB03D90045B7F0 /* Building.swift */; settings = {ASSET_TAGS = (); }; };
 		DAA44B4A1BBB0C680045B7F0 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B491BBB0C680045B7F0 /* Buildings.swift */; settings = {ASSET_TAGS = (); }; };
 		DAA44B4C1BBB0CE70045B7F0 /* Buildings.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */; settings = {ASSET_TAGS = (); }; };
+		DAA44B4E1BBB1E8D0045B7F0 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B4D1BBB1E8D0045B7F0 /* pin.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DAA44B471BBB03D90045B7F0 /* Building.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
 		DAA44B491BBB0C680045B7F0 /* Buildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; };
 		DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buildings.json; sourceTree = "<group>"; };
+		DAA44B4D1BBB1E8D0045B7F0 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 		DAA44B421BBAFD830045B7F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DAA44B4D1BBB1E8D0045B7F0 /* pin.png */,
 				DAA44B181BBAFC440045B7F0 /* Assets.xcassets */,
 				DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */,
 			);
@@ -304,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA44B4E1BBB1E8D0045B7F0 /* pin.png in Resources */,
 				DAA44B1C1BBAFC440045B7F0 /* LaunchScreen.storyboard in Resources */,
 				DAA44B191BBAFC440045B7F0 /* Assets.xcassets in Resources */,
 				DAA44B171BBAFC440045B7F0 /* Main.storyboard in Resources */,

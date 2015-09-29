@@ -10,12 +10,16 @@ import UIKit
 import MapKit
 
 class Building: NSObject, MKAnnotation {
+    let id: String
     let name: String
     let coordinate: CLLocationCoordinate2D
+    var pin: UIImage
     
-    init(name: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees){
+    init(id: String, name: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees){
+        self.id = id
         self.name = name
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        self.pin = Building.createPin(id)
         
         super.init()
     }
@@ -25,6 +29,7 @@ class Building: NSObject, MKAnnotation {
     }
     
     class func fromJSON(json: NSDictionary) -> Building?{
+        let id = json["id"] as? String
         let name = json["name"] as? String
         var longitude: Double?
         var latitude: Double?
@@ -37,9 +42,37 @@ class Building: NSObject, MKAnnotation {
             }
         }
         
-        if name != nil && longitude != nil && latitude != nil{
-            return Building(name: name!, latitude: latitude!, longitude: longitude!)
+        if id != nil && name != nil && longitude != nil && latitude != nil{
+            return Building(id: id!, name: name!, latitude: latitude!, longitude: longitude!)
         }
         return nil
+    }
+    
+    class func createPin(text: String) -> UIImage{
+        let image = UIImage(named: "pin.png")!
+        let color: UIColor = UIColor.blackColor()
+        let font: UIFont = UIFont.boldSystemFontOfSize(12)
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.alignment = .Center
+        
+        let attributes = [
+            NSFontAttributeName: font,
+            NSForegroundColorAttributeName: color,
+            NSParagraphStyleAttributeName: paragraph
+        ]
+        let size = CGSizeMake(24, 34)
+        
+        UIGraphicsBeginImageContext(size)
+        
+        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
+        
+        let rect = CGRectMake(0, 5, size.width, size.height)
+        text.drawInRect(rect, withAttributes: attributes)
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
+        
     }
 }

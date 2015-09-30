@@ -12,14 +12,18 @@ import MapKit
 class Building: NSObject, MKAnnotation {
     let id: String
     let name: String
+    let departments: String
+    let searchText: String
     let coordinate: CLLocationCoordinate2D
     let location: CLLocation
     var pin: UIImage
     var activePin: UIImage
     
-    init(id: String, name: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees){
+    init(id: String, name: String, departments: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees){
         self.id = id
         self.name = name
+        self.departments = departments
+        self.searchText = (name + departments).lowercaseString
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         self.location = CLLocation(latitude: latitude, longitude: longitude)
         self.pin = Building.createPin(id, image: "pin.png", size: CGSizeMake(24, 34))
@@ -35,6 +39,7 @@ class Building: NSObject, MKAnnotation {
     class func fromJSON(json: NSDictionary) -> Building?{
         let id = json["id"] as? String
         let name = json["name"] as? String
+        var departments: String?
         var longitude: Double?
         var latitude: Double?
         if let position = json["position"] as? NSDictionary{
@@ -45,9 +50,17 @@ class Building: NSObject, MKAnnotation {
                 latitude = positionLatitude.doubleValue
             }
         }
+        if let descriptions = json["descriptions"] as? NSDictionary{
+            if let department = descriptions["text"] as? String{
+                departments = department
+            }
+            if let deparmentsArray = descriptions["text"] as? [String]{
+                departments = deparmentsArray.joinWithSeparator(", ")
+            }
+        }
         
-        if id != nil && name != nil && longitude != nil && latitude != nil{
-            return Building(id: id!, name: name!, latitude: latitude!, longitude: longitude!)
+        if id != nil && name != nil && longitude != nil && latitude != nil && departments != nil{
+            return Building(id: id!, name: name!, departments: departments!, latitude: latitude!, longitude: longitude!)
         }
         return nil
     }

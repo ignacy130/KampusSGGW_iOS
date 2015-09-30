@@ -2,12 +2,14 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4bG-Ll-vyb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="l6I-Kj-Vio">
             <objects>
                 <navigationController id="4bG-Ll-vyb" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pnH-Vu-N79">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -36,7 +38,6 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </mapView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KR2-Ku-G0w" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3Tk-Nc-PGY"/>
                             <constraint firstItem="KR2-Ku-G0w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="I0h-pf-lcm"/>
@@ -58,7 +59,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564.5" y="479.5"/>
+            <point key="canvasLocation" x="336.5" y="367.5"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="nMk-oL-Whs">
+            <objects>
+                <tableViewController storyboardIdentifier="SearchResultsTableViewController" id="Iwq-Iu-qMp" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" id="INc-YP-zrK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.7803921568627451" green="0.98431372549019602" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buildingCell" rowHeight="61" id="lz2-eU-TQJ" customClass="BuildingTableViewCell" customModule="KampusSGGW_ios" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="61"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lz2-eU-TQJ" id="UE2-VG-6p0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="61"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departments" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8M-o4-Ndi">
+                                            <rect key="frame" x="16" y="26" width="359" height="35"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="11"/>
+                                            <color key="textColor" red="0.2784313725" green="0.074509803920000006" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVq-PL-HuW">
+                                            <rect key="frame" x="16" y="8" width="359" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <color key="textColor" red="0.27843137254901962" green="0.074509803921568626" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="h8M-o4-Ndi" firstAttribute="leading" secondItem="GVq-PL-HuW" secondAttribute="leading" id="3gd-Bl-lXE"/>
+                                        <constraint firstItem="h8M-o4-Ndi" firstAttribute="trailing" secondItem="GVq-PL-HuW" secondAttribute="trailing" id="6fA-Yx-vH6"/>
+                                        <constraint firstItem="GVq-PL-HuW" firstAttribute="leading" secondItem="UE2-VG-6p0" secondAttribute="leadingMargin" constant="8" id="7xt-uy-b6F"/>
+                                        <constraint firstAttribute="trailing" secondItem="GVq-PL-HuW" secondAttribute="trailing" id="XFr-cX-qLd"/>
+                                        <constraint firstItem="GVq-PL-HuW" firstAttribute="top" secondItem="UE2-VG-6p0" secondAttribute="topMargin" id="aP2-SL-uj3"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="GVq-PL-HuW" secondAttribute="bottom" constant="23.5" id="gc6-Nr-sBY"/>
+                                        <constraint firstItem="h8M-o4-Ndi" firstAttribute="top" secondItem="UE2-VG-6p0" secondAttribute="topMargin" constant="18" id="lAw-S8-Hei"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="h8M-o4-Ndi" secondAttribute="bottom" constant="-8.5" id="wYh-Fy-9PE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="building" destination="GVq-PL-HuW" id="Bha-1n-gm6"/>
+                                    <outlet property="departments" destination="h8M-o4-Ndi" id="4xi-7f-I92"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Iwq-Iu-qMp" id="HLE-jh-FeB"/>
+                            <outlet property="delegate" destination="Iwq-Iu-qMp" id="IDT-ZT-LMg"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6f-rY-JYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938.5" y="42.5"/>
         </scene>
     </scenes>
 </document>

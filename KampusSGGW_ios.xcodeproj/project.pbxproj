@@ -20,6 +20,7 @@
 		DAA44B4E1BBB1E8D0045B7F0 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B4D1BBB1E8D0045B7F0 /* pin.png */; settings = {ASSET_TAGS = (); }; };
 		DAED64111BBC60F70042355F /* active.png in Resources */ = {isa = PBXBuildFile; fileRef = DAED64101BBC60F70042355F /* active.png */; settings = {ASSET_TAGS = (); }; };
 		DAED64131BBC6ABD0042355F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAED64121BBC6ABD0042355F /* Colors.swift */; settings = {ASSET_TAGS = (); }; };
+		DAED64171BBC72A20042355F /* BuildingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAED64161BBC72A20042355F /* BuildingTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		DAA44B4D1BBB1E8D0045B7F0 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 		DAED64101BBC60F70042355F /* active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = active.png; sourceTree = "<group>"; };
 		DAED64121BBC6ABD0042355F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		DAED64161BBC72A20042355F /* BuildingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		DAA44B101BBAFC440045B7F0 /* KampusSGGW_ios */ = {
 			isa = PBXGroup;
 			children = (
+				DAED64141BBC72860042355F /* ViewElements */,
 				DAA44B3F1BBAFD4B0045B7F0 /* AppDelegate */,
 				DAA44B441BBAFDA10045B7F0 /* Supporting Files */,
 				DAA44B401BBAFD690045B7F0 /* Controllers */,
@@ -205,6 +208,22 @@
 				DAA44B131BBAFC440045B7F0 /* MapController.swift */,
 			);
 			name = MapController;
+			sourceTree = "<group>";
+		};
+		DAED64141BBC72860042355F /* ViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				DAED64151BBC728D0042355F /* ViewCells */,
+			);
+			name = ViewElements;
+			sourceTree = "<group>";
+		};
+		DAED64151BBC728D0042355F /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				DAED64161BBC72A20042355F /* BuildingTableViewCell.swift */,
+			);
+			name = ViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA44B141BBAFC440045B7F0 /* MapController.swift in Sources */,
+				DAED64171BBC72A20042355F /* BuildingTableViewCell.swift in Sources */,
 				DAED64131BBC6ABD0042355F /* Colors.swift in Sources */,
 				DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */,
 				DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */,

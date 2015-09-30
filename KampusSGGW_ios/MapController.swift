@@ -14,10 +14,13 @@ class MapController: UIViewController {
     var searchController:UISearchController!
     var searchResultsController:UITableViewController!
     var buildings = [Building]()
+    var filteredBuildings = [Building]()
+    let cellIdentifier = "buildingCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapView.delegate = self
+        self.buildings = Buildings.getAll()
         
         setNavigationBarColors()
         initializeSearch()
@@ -31,7 +34,8 @@ class MapController: UIViewController {
     }
     
     func initializeSearch(){
-        self.searchResultsController = UITableViewController()
+        self.searchResultsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SearchResultsTableViewController") as? UITableViewController
+        self.searchResultsController.tableView.backgroundColor = Colors.background
         self.searchController = UISearchController(searchResultsController: self.searchResultsController)
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.searchResultsUpdater = self
@@ -40,8 +44,6 @@ class MapController: UIViewController {
     }
     
     func displayAnnotations(){
-        self.buildings = Buildings.getAll()
-        
         mapView.addAnnotations(self.buildings)
     }
     
@@ -62,15 +64,25 @@ class MapController: UIViewController {
     }
     
     @IBAction func showSearchBar(sender: AnyObject) {
+        self.filteredBuildings = self.buildings
         presentViewController(searchController, animated: true, completion: nil)
     }
 }
 
 extension MapController: UITableViewDelegate, UITableViewDataSource{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel!.text = buildings[indexPath.row].name
-        return cell
+        var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as? BuildingTableViewCell
+        
+        if cell == nil{
+            tableView.registerClass(BuildingTableViewCell.classForCoder(), forCellReuseIdentifier: cellIdentifier)
+            cell = BuildingTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
+        }
+        
+        let building = self.filteredBuildings[indexPath.row]
+        cell?.assignValuesFromBuilding(building)
+        cell?.backgroundColor = Colors.background
+        
+        return cell!
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -78,16 +90,30 @@ extension MapController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return buildings.count
+        if filteredBuildings.count == 0{
+            let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height))
+            emptyLabel.text = "Brak wyników spełniających podane kryteria."
+            emptyLabel.textColor = Colors.text
+            emptyLabel.numberOfLines = 0
+            emptyLabel.textAlignment = .Center
+            emptyLabel.sizeToFit()
+            
+            self.searchResultsController.tableView.backgroundView = emptyLabel
+            self.searchResultsController.tableView?.backgroundView?.hidden = false
+        }
+        else{
+            self.searchResultsController.tableView?.backgroundView?.hidden = true
+        }
+        return filteredBuildings.count
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selection = buildings[indexPath.row]
+        self.searchController.active = false
+        let selection = filteredBuildings[indexPath.row]
         for annotation in self.buildings{
             mapView.viewForAnnotation(annotation)?.image = annotation.pin
         }
         mapView.viewForAnnotation(selection)?.image = selection.activePin
-        self.searchController.active = false
         centerMapOnActiveLocation(selection.location)
     }
 }
@@ -95,6 +121,14 @@ extension MapController: UITableViewDelegate, UITableViewDataSource{
 extension MapController: UISearchResultsUpdating{
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         self.searchResultsController.view.hidden = false
+        if let input = searchController.searchBar.text{
+            filterBuildings(input.lowercaseString)
+        }
+    }
+    
+    func filterBuildings(input: String){
+        self.filteredBuildings = self.buildings.filter({ $0.searchText.rangeOfString(input) != nil || input.characters.count == 0 })
+        self.searchResultsController?.tableView.reloadData()
     }
 }
 

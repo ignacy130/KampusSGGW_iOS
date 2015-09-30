@@ -19,6 +19,7 @@
 		DAA44B4C1BBB0CE70045B7F0 /* Buildings.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */; settings = {ASSET_TAGS = (); }; };
 		DAA44B4E1BBB1E8D0045B7F0 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B4D1BBB1E8D0045B7F0 /* pin.png */; settings = {ASSET_TAGS = (); }; };
 		DAED64111BBC60F70042355F /* active.png in Resources */ = {isa = PBXBuildFile; fileRef = DAED64101BBC60F70042355F /* active.png */; settings = {ASSET_TAGS = (); }; };
+		DAED64131BBC6ABD0042355F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAED64121BBC6ABD0042355F /* Colors.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buildings.json; sourceTree = "<group>"; };
 		DAA44B4D1BBB1E8D0045B7F0 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 		DAED64101BBC60F70042355F /* active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = active.png; sourceTree = "<group>"; };
+		DAED64121BBC6ABD0042355F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA44B491BBB0C680045B7F0 /* Buildings.swift */,
+				DAED64121BBC6ABD0042355F /* Colors.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA44B141BBAFC440045B7F0 /* MapController.swift in Sources */,
+				DAED64131BBC6ABD0042355F /* Colors.swift in Sources */,
 				DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */,
 				DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */,
 				DAA44B4A1BBB0C680045B7F0 /* Buildings.swift in Sources */,

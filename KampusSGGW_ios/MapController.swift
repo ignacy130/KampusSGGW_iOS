@@ -18,14 +18,25 @@ class MapController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapView.delegate = self
+        
+        setNavigationBarColors()
+        initializeSearch()
+        centerMapOnCamp()
+        displayAnnotations()
+    }
+    
+    func setNavigationBarColors(){
+        self.navigationController?.navigationBar.barTintColor = Colors.background
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Colors.text]
+    }
+    
+    func initializeSearch(){
         self.searchResultsController = UITableViewController()
         self.searchController = UISearchController(searchResultsController: self.searchResultsController)
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.searchResultsUpdater = self
         self.searchResultsController.tableView.dataSource = self
         self.searchResultsController.tableView.delegate = self
-        centerMapOnCamp()
-        displayAnnotations()
     }
     
     func displayAnnotations(){

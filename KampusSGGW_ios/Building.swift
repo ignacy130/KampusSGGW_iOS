@@ -22,8 +22,8 @@ class Building: NSObject, MKAnnotation {
         self.name = name
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         self.location = CLLocation(latitude: latitude, longitude: longitude)
-        self.pin = Building.createPin(id, image: "pin.png")
-        self.activePin = Building.createPin(id, image: "active.png")
+        self.pin = Building.createPin(id, image: "pin.png", size: CGSizeMake(24, 34))
+        self.activePin = Building.createPin(id, image: "active.png", size: CGSizeMake(30, 42))
         
         super.init()
     }
@@ -52,7 +52,7 @@ class Building: NSObject, MKAnnotation {
         return nil
     }
     
-    class func createPin(text: String, image: String) -> UIImage{
+    class func createPin(text: String, image: String, size: CGSize) -> UIImage{
         let image = UIImage(named: image)!
         let color: UIColor = UIColor.blackColor()
         let font: UIFont = UIFont.boldSystemFontOfSize(12)
@@ -64,13 +64,12 @@ class Building: NSObject, MKAnnotation {
             NSForegroundColorAttributeName: color,
             NSParagraphStyleAttributeName: paragraph
         ]
-        let size = CGSizeMake(24, 34)
         
         UIGraphicsBeginImageContext(size)
         
         image.drawInRect(CGRectMake(0, 0, size.width, size.height))
         
-        let rect = CGRectMake(0, 5, size.width, size.height)
+        let rect = CGRectMake(0, size.width/4, size.width, size.height)
         text.drawInRect(rect, withAttributes: attributes)
         
         let newImage = UIGraphicsGetImageFromCurrentImageContext()

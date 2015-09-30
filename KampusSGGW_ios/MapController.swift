@@ -35,10 +35,11 @@ class MapController: UIViewController {
     
     func initializeSearch(){
         self.searchResultsController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("SearchResultsTableViewController") as? UITableViewController
-        self.searchResultsController.tableView.backgroundColor = Colors.background
+        self.searchResultsController.tableView.backgroundColor = UIColor.clearColor()
         self.searchController = UISearchController(searchResultsController: self.searchResultsController)
         self.searchController.hidesNavigationBarDuringPresentation = false
         self.searchController.searchResultsUpdater = self
+        self.searchController.searchBar.delegate = self
         self.searchResultsController.tableView.dataSource = self
         self.searchResultsController.tableView.delegate = self
     }
@@ -69,6 +70,12 @@ class MapController: UIViewController {
     }
 }
 
+extension MapController: UISearchBarDelegate{
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        searchBar.text = ""
+    }
+}
+
 extension MapController: UITableViewDelegate, UITableViewDataSource{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as? BuildingTableViewCell
@@ -90,38 +97,25 @@ extension MapController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if filteredBuildings.count == 0{
-            let emptyLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height))
-            emptyLabel.text = "Brak wyników spełniających podane kryteria."
-            emptyLabel.textColor = Colors.text
-            emptyLabel.numberOfLines = 0
-            emptyLabel.textAlignment = .Center
-            emptyLabel.sizeToFit()
-            
-            self.searchResultsController.tableView.backgroundView = emptyLabel
-            self.searchResultsController.tableView?.backgroundView?.hidden = false
-        }
-        else{
-            self.searchResultsController.tableView?.backgroundView?.hidden = true
-        }
         return filteredBuildings.count
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.searchController.active = false
         let selection = filteredBuildings[indexPath.row]
         for annotation in self.buildings{
             mapView.viewForAnnotation(annotation)?.image = annotation.pin
         }
         mapView.viewForAnnotation(selection)?.image = selection.activePin
         centerMapOnActiveLocation(selection.location)
+        searchController.searchBar.text = ""
+        self.searchController.active = false
     }
 }
 
 extension MapController: UISearchResultsUpdating{
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        self.searchResultsController.view.hidden = false
         if let input = searchController.searchBar.text{
+            print("input: ", input.lowercaseString)
             filterBuildings(input.lowercaseString)
         }
     }

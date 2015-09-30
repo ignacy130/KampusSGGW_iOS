@@ -13,13 +13,17 @@ class Building: NSObject, MKAnnotation {
     let id: String
     let name: String
     let coordinate: CLLocationCoordinate2D
+    let location: CLLocation
     var pin: UIImage
+    var activePin: UIImage
     
     init(id: String, name: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees){
         self.id = id
         self.name = name
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        self.pin = Building.createPin(id)
+        self.location = CLLocation(latitude: latitude, longitude: longitude)
+        self.pin = Building.createPin(id, image: "pin.png")
+        self.activePin = Building.createPin(id, image: "active.png")
         
         super.init()
     }
@@ -48,8 +52,8 @@ class Building: NSObject, MKAnnotation {
         return nil
     }
     
-    class func createPin(text: String) -> UIImage{
-        let image = UIImage(named: "pin.png")!
+    class func createPin(text: String, image: String) -> UIImage{
+        let image = UIImage(named: image)!
         let color: UIColor = UIColor.blackColor()
         let font: UIFont = UIFont.boldSystemFontOfSize(12)
         let paragraph = NSMutableParagraphStyle()

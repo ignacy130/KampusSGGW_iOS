@@ -16,7 +16,22 @@ class MapController: UIViewController {
     var buildings = [Building]()
     var filteredBuildings = [Building]()
     let cellIdentifier = "buildingCell"
-
+    var locationManager = CLLocationManager()
+    
+    @IBAction func showAboutInfo(sender: AnyObject) {
+    }
+    
+    @IBAction func showMyLocation(sender: AnyObject) {
+        let userLocation = mapView.userLocation
+        
+        if let location = userLocation.location{
+            let region = MKCoordinateRegionMakeWithDistance(location.coordinate, 700, 700)
+            
+            mapView.setRegion(region, animated: true)
+        }
+        
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mapView.delegate = self
@@ -28,9 +43,26 @@ class MapController: UIViewController {
         displayAnnotations()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        checkLocationAuthorizationStatus()
+    }
+    
+    func checkLocationAuthorizationStatus(){
+        if CLLocationManager.authorizationStatus() == .AuthorizedWhenInUse{
+            mapView.showsUserLocation = true
+        }
+        else{
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
     func setNavigationBarColors(){
         self.navigationController?.navigationBar.barTintColor = Colors.background
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Colors.text]
+        self.navigationController?.toolbar.barTintColor = Colors.background
+        self.navigationController?.toolbar.tintColor = Colors.background
+        
     }
     
     func initializeSearch(){
@@ -81,7 +113,6 @@ extension MapController: UITableViewDelegate, UITableViewDataSource{
         var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as? BuildingTableViewCell
         
         if cell == nil{
-            tableView.registerClass(BuildingTableViewCell.classForCoder(), forCellReuseIdentifier: cellIdentifier)
             cell = BuildingTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: cellIdentifier)
         }
         

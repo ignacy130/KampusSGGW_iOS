@@ -23,7 +23,8 @@ class Building: NSObject, MKAnnotation {
         self.id = id
         self.name = name
         self.departments = departments
-        self.searchText = (name + departments).lowercaseString
+        let firstLetters = departments.componentsSeparatedByString(" ").filter{ $0.characters.count > 1 }.map{ String($0.characters.first!) }.joinWithSeparator("")
+        self.searchText = (name + departments + firstLetters).lowercaseString
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         self.location = CLLocation(latitude: latitude, longitude: longitude)
         self.pin = Building.createPin(id, image: "pin.png", size: CGSizeMake(24, 34))
@@ -34,6 +35,10 @@ class Building: NSObject, MKAnnotation {
     
     var title: String?{
         return self.name
+    }
+    
+    var subtitle: String?{
+        return self.departments
     }
     
     class func fromJSON(json: NSDictionary) -> Building?{

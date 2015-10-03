@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA51649A1BC05DC9007BF4D3 /* camp.gpx in Resources */ = {isa = PBXBuildFile; fileRef = DA5164991BC05DC9007BF4D3 /* camp.gpx */; settings = {ASSET_TAGS = (); }; };
 		DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */; };
 		DAA44B141BBAFC440045B7F0 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B131BBAFC440045B7F0 /* MapController.swift */; };
 		DAA44B171BBAFC440045B7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B151BBAFC440045B7F0 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA5164991BC05DC9007BF4D3 /* camp.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = camp.gpx; sourceTree = "<group>"; };
 		DAA44B0E1BBAFC440045B7F0 /* KampusSGGW_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KampusSGGW_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA44B131BBAFC440045B7F0 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		DAA44B051BBAFC440045B7F0 = {
 			isa = PBXGroup;
 			children = (
+				DA5164991BC05DC9007BF4D3 /* camp.gpx */,
 				DAA44B101BBAFC440045B7F0 /* KampusSGGW_ios */,
 				DAA44B251BBAFC440045B7F0 /* KampusSGGW_iosTests */,
 				DAA44B301BBAFC440045B7F0 /* KampusSGGW_iosUITests */,
@@ -294,6 +297,11 @@
 					DAA44B0D1BBAFC440045B7F0 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = QDYUNR2JCR;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					DAA44B211BBAFC440045B7F0 = {
 						CreatedOnToolsVersion = 7.0;
@@ -332,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA51649A1BC05DC9007BF4D3 /* camp.gpx in Resources */,
 				DAA44B4E1BBB1E8D0045B7F0 /* pin.png in Resources */,
 				DAA44B1C1BBAFC440045B7F0 /* LaunchScreen.storyboard in Resources */,
 				DAA44B191BBAFC440045B7F0 /* Assets.xcassets in Resources */,

@@ -40,32 +40,20 @@
                                 <animations/>
                             </mapView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QfA-fN-E43">
-                                <rect key="frame" x="0.0" y="628" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="V4C-jn-Rip"/>
-                                    <barButtonItem image="CurrentLocation" id="oCf-tU-Rat">
+                                    <barButtonItem image="location" id="oCf-tU-Rat">
                                         <connections>
                                             <action selector="showMyLocation:" destination="BYZ-38-t0r" id="DpJ-8p-MQR"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="mys-nT-bCO"/>
-                                    <barButtonItem title="Item" style="plain" id="4oR-rN-eJ5">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" id="Lso-vy-vsV">
-                                            <rect key="frame" x="176" y="11" width="22" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <animations/>
-                                            <connections>
-                                                <action selector="showAboutInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="75a-mo-EDo"/>
-                                                <segue destination="G0T-G8-LEC" kind="show" id="XaC-4V-x9B"/>
-                                            </connections>
-                                        </button>
-                                    </barButtonItem>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Oax-ut-Gr8"/>
-                                    <barButtonItem image="News" id="GCg-Cf-9cm">
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="v21-Pw-6ke"/>
+                                    <barButtonItem title="Item" image="about" id="lTa-Bf-cck">
                                         <connections>
-                                            <segue destination="fJ5-k3-avr" kind="show" id="Ud6-VM-c9e"/>
+                                            <segue destination="G0T-G8-LEC" kind="show" id="Dvn-CB-yqX"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ZNM-dd-C8E"/>
@@ -76,13 +64,13 @@
                         </subviews>
                         <animations/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="KR2-Ku-G0w" secondAttribute="trailing" id="6pB-Ke-25n"/>
-                            <constraint firstItem="KR2-Ku-G0w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7MX-0H-FzT"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="QfA-fN-E43" secondAttribute="bottom" constant="-5" id="FA6-n0-5zX"/>
-                            <constraint firstItem="KR2-Ku-G0w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JXi-5B-5hh"/>
-                            <constraint firstItem="QfA-fN-E43" firstAttribute="trailing" secondItem="KR2-Ku-G0w" secondAttribute="trailing" id="UAn-5F-mgD"/>
-                            <constraint firstItem="QfA-fN-E43" firstAttribute="top" secondItem="KR2-Ku-G0w" secondAttribute="bottom" id="ic1-Ab-fDO"/>
-                            <constraint firstItem="QfA-fN-E43" firstAttribute="leading" secondItem="KR2-Ku-G0w" secondAttribute="leading" id="mwe-nA-wMZ"/>
+                            <constraint firstItem="KR2-Ku-G0w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7qG-vN-sOG"/>
+                            <constraint firstItem="QfA-fN-E43" firstAttribute="leading" secondItem="KR2-Ku-G0w" secondAttribute="leading" id="9e4-MN-Xl7"/>
+                            <constraint firstItem="KR2-Ku-G0w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="THS-9f-y2a"/>
+                            <constraint firstItem="KR2-Ku-G0w" firstAttribute="trailing" secondItem="QfA-fN-E43" secondAttribute="trailing" id="b1e-J5-TGY"/>
+                            <constraint firstAttribute="trailing" secondItem="QfA-fN-E43" secondAttribute="trailing" id="cX6-KS-dSs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KR2-Ku-G0w" secondAttribute="bottom" constant="39" id="sJu-eR-skw"/>
+                            <constraint firstItem="QfA-fN-E43" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="y2p-ck-OfE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Kampus SGGW" id="q85-VU-sS2">
@@ -164,39 +152,10 @@
             </objects>
             <point key="canvasLocation" x="938.5" y="42.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xel-aI-w5h">
-            <objects>
-                <viewController id="fJ5-k3-avr" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qXB-Us-fEj"/>
-                        <viewControllerLayoutGuide type="bottom" id="zHi-gN-FZ4"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hHJ-0B-xb7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NEWS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sfE-Bx-vAS">
-                                <rect key="frame" x="176" y="141" width="49" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lln-ko-9dy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="288.5" y="1197.5"/>
-        </scene>
-        <!--View Controller-->
+        <!--About Controller-->
         <scene sceneID="bdc-dM-Wfk">
             <objects>
-                <viewController id="G0T-G8-LEC" sceneMemberID="viewController">
+                <viewController id="G0T-G8-LEC" customClass="AboutController" customModule="KampusSGGW_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QBX-aY-AhM"/>
                         <viewControllerLayoutGuide type="bottom" id="NHW-Ge-k5V"/>
@@ -205,16 +164,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABOUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vG9-ZI-xrP">
-                                <rect key="frame" x="158" y="174" width="58" height="21"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPz-25-YWD">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="duV-BN-aPP"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem id="JVk-61-J8J"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MO5-2l-e3c"/>
+                                    <barButtonItem image="facebook" id="SP0-mJ-JOF">
+                                        <color key="tintColor" red="0.2784313725" green="0.074509803920000006" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="openFacebook:" destination="G0T-G8-LEC" id="aGy-Ka-PSQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="REX-eK-TZK"/>
+                                </items>
+                                <color key="barTintColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wpH-Ba-glv">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jo6-TA-Uv9" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="silvernet.png" translatesAutoresizingMaskIntoConstraints="NO" id="wxP-Fi-pGv">
+                                                <rect key="frame" x="20" y="8" width="335" height="140"/>
+                                                <animations/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wbijajcie na naszego Fejsa i zobaczcie co robimy!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTp-fP-azH">
+                                                <rect key="frame" x="20" y="230" width="335" height="36"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aplikację Kampus SGGW oraz dostęp do najświeższych wiadomości dostarcza Koło Naukowe Informatyków Silver .NET." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0u-hb-dFY">
+                                                <rect key="frame" x="20" y="156" width="335" height="66"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wszelkie sugestie i propozycje prosimy przesyłać na adres kontakt@silver.sggw.pl lub za pośrednictwem Facebook'a." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujg-XZ-NTU">
+                                                <rect key="frame" x="20" y="274" width="335" height="70"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                            </scrollView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wpH-Ba-glv" firstAttribute="top" secondItem="QBX-aY-AhM" secondAttribute="bottom" id="1ZW-WQ-baC"/>
+                            <constraint firstItem="rPz-25-YWD" firstAttribute="top" secondItem="wpH-Ba-glv" secondAttribute="bottom" constant="45" id="Ln3-ZX-gPa"/>
+                            <constraint firstItem="NHW-Ge-k5V" firstAttribute="top" secondItem="rPz-25-YWD" secondAttribute="bottom" id="Nes-WA-HUG"/>
+                            <constraint firstAttribute="trailing" secondItem="rPz-25-YWD" secondAttribute="trailing" id="Qma-so-i1B"/>
+                            <constraint firstItem="rPz-25-YWD" firstAttribute="leading" secondItem="BX0-5J-O8i" secondAttribute="leading" id="TxB-we-yc2"/>
+                            <constraint firstItem="wpH-Ba-glv" firstAttribute="leading" secondItem="BX0-5J-O8i" secondAttribute="leading" id="esJ-b1-1Yz"/>
+                            <constraint firstAttribute="trailing" secondItem="wpH-Ba-glv" secondAttribute="trailing" id="wNk-f0-h5Q"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -222,9 +240,31 @@
             </objects>
             <point key="canvasLocation" x="899.5" y="764.5"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="9bR-c7-tg3">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8t-im-9HJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ci1-IZ-XZm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SzT-dD-GkN"/>
+                        <viewControllerLayoutGuide type="bottom" id="pox-fJ-c6D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IMQ-lS-4tS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1537" y="680"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="CurrentLocation" width="25" height="25"/>
-        <image name="News" width="25" height="25"/>
+        <image name="about" width="32" height="32"/>
+        <image name="facebook" width="32" height="32"/>
+        <image name="location" width="32" height="32"/>
+        <image name="silvernet.png" width="1647" height="1075"/>
     </resources>
 </document>

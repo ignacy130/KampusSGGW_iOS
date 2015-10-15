@@ -9,6 +9,10 @@
 import UIKit
 
 class AboutController: UIViewController {
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var contentView: UIView!
+    
     @IBAction func openFacebook(sender: AnyObject) {
         let fbURLWeb = NSURL(string: "https://www.facebook.com/silvernetgroupsggw")!
         let fbURLApp = NSURL(string: "fb://profile/428765197142533")!
@@ -21,10 +25,14 @@ class AboutController: UIViewController {
         }
     }
     
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        print(contentView.frame)
+        print(scrollView.frame)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.navigationController?.navigationBar.tintColor = Colors.text
         
         // Do any additional setup after loading the view.

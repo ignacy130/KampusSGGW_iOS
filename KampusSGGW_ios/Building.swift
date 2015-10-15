@@ -19,7 +19,7 @@ class Building: NSObject, MKAnnotation {
     var pin: UIImage
     var activePin: UIImage
     
-    init(id: String, name: String, departments: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees){
+    init(id: String, name: String, departments: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees, pin: String, active: String?){
         self.id = id
         self.name = name
         self.departments = departments
@@ -27,8 +27,14 @@ class Building: NSObject, MKAnnotation {
         self.searchText = (name + departments + firstLetters).lowercaseString
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         self.location = CLLocation(latitude: latitude, longitude: longitude)
-        self.pin = Building.createPin(id, image: "pin.png", size: CGSizeMake(24, 34))
-        self.activePin = Building.createPin(id, image: "active.png", size: CGSizeMake(30, 42))
+        self.pin = Building.createPin(id, image: pin, size: CGSizeMake(24, 34))
+
+        if active != nil{
+            self.activePin = Building.createPin(id, image: active!, size: CGSizeMake(30, 42))
+        }
+        else{
+            self.activePin = self.pin
+        }
         
         super.init()
     }
@@ -44,6 +50,8 @@ class Building: NSObject, MKAnnotation {
     class func fromJSON(json: NSDictionary) -> Building?{
         let id = json["id"] as? String
         let name = json["name"] as? String
+        let pin = json["pin"] as? String
+        let activePin = json["pin-active"] as? String
         var departments: String?
         var longitude: Double?
         var latitude: Double?
@@ -64,8 +72,11 @@ class Building: NSObject, MKAnnotation {
             }
         }
         
-        if id != nil && name != nil && longitude != nil && latitude != nil && departments != nil{
-            return Building(id: id!, name: name!, departments: departments!, latitude: latitude!, longitude: longitude!)
+        if id != nil && name != nil && longitude != nil && latitude != nil && departments != nil && pin != nil{
+            return Building(id: id!, name: name!, departments: departments!, latitude: latitude!, longitude: longitude!, pin: pin!, active: activePin)
+        }
+        else{
+            print("Parse failed", json)
         }
         return nil
     }

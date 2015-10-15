@@ -146,7 +146,6 @@ extension MapController: UITableViewDelegate, UITableViewDataSource{
 extension MapController: UISearchResultsUpdating{
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         if let input = searchController.searchBar.text{
-            print("input: ", input.lowercaseString)
             filterBuildings(input.lowercaseString)
         }
     }
@@ -167,12 +166,21 @@ extension MapController : MKMapViewDelegate{
                 view = dequeuedView
             }
             else{
+                let button = UIButton(type: .DetailDisclosure)
                 view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
+                view.rightCalloutAccessoryView = button
                 view.image = building.pin
             }
             return view
         }
         return nil
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let building = view.annotation as? Building
+        if building != nil{
+            print(building?.id)
+        }
     }
 }

@@ -13,6 +13,7 @@ class Building: NSObject, MKAnnotation {
     let id: String
     let name: String
     let departments: String
+    let departmentsArray: [String]
     let searchText: String
     let coordinate: CLLocationCoordinate2D
     let location: CLLocation
@@ -23,6 +24,7 @@ class Building: NSObject, MKAnnotation {
         self.id = id
         self.name = name
         self.departments = departments
+        self.departmentsArray = departments.componentsSeparatedByString(", ")
         let firstLetters = departments.componentsSeparatedByString(" ").filter{ $0.characters.count > 1 }.map{ String($0.characters.first!) }.joinWithSeparator("")
         self.searchText = (name + departments + firstLetters).lowercaseString
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)

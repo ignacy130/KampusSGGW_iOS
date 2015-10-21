@@ -23,6 +23,83 @@
             </objects>
             <point key="canvasLocation" x="-195" y="325"/>
         </scene>
+        <!--Title-->
+        <scene sceneID="Dsz-iU-ZY1">
+            <objects>
+                <viewController id="Tqu-RI-jb6" customClass="BuildingController" customModule="KampusSGGW_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mIL-FH-dRU"/>
+                        <viewControllerLayoutGuide type="bottom" id="iL6-SI-2uM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gDk-EO-UDd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qE-tG-IIY">
+                                <rect key="frame" x="0.0" y="253" width="375" height="161"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departments" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etG-xg-xoy" customClass="TopAlignedLabel" customModule="KampusSGGW_ios" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="55" width="359" height="60"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="0eP-ER-bgd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                        <color key="textColor" red="0.2784313725" green="0.074509803920000006" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sT-8u-R6y">
+                                        <rect key="frame" x="8" y="8" width="359" height="39"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="rvb-xs-aIC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.2784313725" green="0.074509803920000006" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVO-0P-sdj">
+                                        <rect key="frame" x="160" y="123" width="54" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Zamknij"/>
+                                        <connections>
+                                            <action selector="dismissModal:" destination="Tqu-RI-jb6" eventType="touchUpInside" id="JH7-5C-hf6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="nVO-0P-sdj" firstAttribute="bottom" secondItem="9qE-tG-IIY" secondAttribute="bottomMargin" id="5DM-kg-1PB"/>
+                                    <constraint firstItem="6sT-8u-R6y" firstAttribute="trailing" secondItem="9qE-tG-IIY" secondAttribute="trailingMargin" id="MYr-ct-u8Z"/>
+                                    <constraint firstItem="etG-xg-xoy" firstAttribute="leading" secondItem="9qE-tG-IIY" secondAttribute="leadingMargin" id="btx-VN-5M5"/>
+                                    <constraint firstItem="etG-xg-xoy" firstAttribute="top" secondItem="6sT-8u-R6y" secondAttribute="bottom" constant="8" id="d1Q-zf-j8m"/>
+                                    <constraint firstAttribute="height" constant="161" id="ha1-Gv-O2V"/>
+                                    <constraint firstItem="6sT-8u-R6y" firstAttribute="top" secondItem="9qE-tG-IIY" secondAttribute="topMargin" id="oP2-hA-nR2"/>
+                                    <constraint firstItem="6sT-8u-R6y" firstAttribute="leading" secondItem="9qE-tG-IIY" secondAttribute="leadingMargin" id="vRd-2s-G0g"/>
+                                    <constraint firstItem="nVO-0P-sdj" firstAttribute="centerX" secondItem="9qE-tG-IIY" secondAttribute="centerX" id="wOU-fi-xAy"/>
+                                    <constraint firstItem="etG-xg-xoy" firstAttribute="trailing" secondItem="9qE-tG-IIY" secondAttribute="trailingMargin" id="woT-pO-KL7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="9qE-tG-IIY" firstAttribute="centerY" secondItem="gDk-EO-UDd" secondAttribute="centerY" id="DQE-8x-Mml"/>
+                            <constraint firstItem="9qE-tG-IIY" firstAttribute="width" secondItem="gDk-EO-UDd" secondAttribute="width" id="K4l-gK-8R3"/>
+                            <constraint firstItem="9qE-tG-IIY" firstAttribute="centerX" secondItem="gDk-EO-UDd" secondAttribute="centerX" id="vAC-Ru-q4x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Uqo-9y-ewG"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="buildingDepartments" destination="etG-xg-xoy" id="eGw-jh-vJw"/>
+                        <outlet property="buildingName" destination="6sT-8u-R6y" id="4j4-Rw-JXe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AK0-4o-NzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="225.5" y="-397.5"/>
+        </scene>
         <!--Kampus SGGW-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -51,7 +128,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="v21-Pw-6ke"/>
-                                    <barButtonItem title="Item" image="about" id="lTa-Bf-cck">
+                                    <barButtonItem image="about" id="lTa-Bf-cck">
                                         <connections>
                                             <segue destination="G0T-G8-LEC" kind="show" id="Dvn-CB-yqX"/>
                                         </connections>
@@ -83,6 +160,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapView" destination="KR2-Ku-G0w" id="dRf-rI-IGD"/>
+                        <segue destination="Tqu-RI-jb6" kind="presentation" identifier="buildingDetails" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="wgp-It-8Jb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,7 +170,8 @@
         <!--Table View Controller-->
         <scene sceneID="nMk-oL-Whs">
             <objects>
-                <tableViewController storyboardIdentifier="SearchResultsTableViewController" id="Iwq-Iu-qMp" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6f-rY-JYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="SearchResultsTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Iwq-Iu-qMp" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" id="INc-YP-zrK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,7 +227,6 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J6f-rY-JYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="938.5" y="42.5"/>
         </scene>
@@ -276,26 +354,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wtr-7i-wfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="899.5" y="764.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="9bR-c7-tg3">
-            <objects>
-                <viewController id="ci1-IZ-XZm" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SzT-dD-GkN"/>
-                        <viewControllerLayoutGuide type="bottom" id="pox-fJ-c6D"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="IMQ-lS-4tS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F8t-im-9HJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1537" y="680"/>
         </scene>
     </scenes>
     <resources>

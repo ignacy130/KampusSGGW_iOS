@@ -14,7 +14,7 @@ class Buildings: NSObject {
         let file = NSBundle.mainBundle().pathForResource("Buildings", ofType: "json")
         if let content = NSData(contentsOfFile: file!){
             do{
-                let json = try NSJSONSerialization.JSONObjectWithData(content, options: .MutableContainers) as? AnyObject
+                let json = try NSJSONSerialization.JSONObjectWithData(content, options: .MutableContainers)
                 
                 if let buildings = json as? NSArray{
                     for building in buildings{

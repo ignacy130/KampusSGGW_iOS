@@ -26,14 +26,10 @@ class AboutController: UIViewController {
     }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        print(contentView.frame)
-        print(scrollView.frame)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.navigationBar.tintColor = Colors.text
         
         // Do any additional setup after loading the view.
     }

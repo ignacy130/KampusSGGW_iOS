@@ -11,6 +11,8 @@
 		DA2FE33E1BCA546800E881BB /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FE33D1BCA546800E881BB /* AboutController.swift */; settings = {ASSET_TAGS = (); }; };
 		DA2FE3401BCA56E700E881BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2FE33F1BCA56E700E881BB /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		DA3D54861BC14946006DA8D1 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3D54841BC14946006DA8D1 /* logo.png */; settings = {ASSET_TAGS = (); }; };
+		DA41EEBD1BD022F30025CDDC /* BuildingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41EEBC1BD022F30025CDDC /* BuildingController.swift */; settings = {ASSET_TAGS = (); }; };
+		DA41EEBF1BD029E20025CDDC /* TopAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */; settings = {ASSET_TAGS = (); }; };
 		DA51649A1BC05DC9007BF4D3 /* camp.gpx in Resources */ = {isa = PBXBuildFile; fileRef = DA5164991BC05DC9007BF4D3 /* camp.gpx */; settings = {ASSET_TAGS = (); }; };
 		DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */; };
 		DAA44B141BBAFC440045B7F0 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B131BBAFC440045B7F0 /* MapController.swift */; };
@@ -47,6 +49,8 @@
 		DA2FE33D1BCA546800E881BB /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		DA2FE33F1BCA56E700E881BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA3D54841BC14946006DA8D1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		DA41EEBC1BD022F30025CDDC /* BuildingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingController.swift; sourceTree = "<group>"; };
+		DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAlignedLabel.swift; sourceTree = "<group>"; };
 		DA5164991BC05DC9007BF4D3 /* camp.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = camp.gpx; sourceTree = "<group>"; };
 		DAA44B0E1BBAFC440045B7F0 /* KampusSGGW_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KampusSGGW_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,14 @@
 				DA2FE33D1BCA546800E881BB /* AboutController.swift */,
 			);
 			name = AboutController;
+			sourceTree = "<group>";
+		};
+		DA41EEBB1BD022E30025CDDC /* BuildingController */ = {
+			isa = PBXGroup;
+			children = (
+				DA41EEBC1BD022F30025CDDC /* BuildingController.swift */,
+			);
+			name = BuildingController;
 			sourceTree = "<group>";
 		};
 		DAA44B051BBAFC440045B7F0 = {
@@ -165,6 +177,7 @@
 		DAA44B401BBAFD690045B7F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DA41EEBB1BD022E30025CDDC /* BuildingController */,
 				DA2FE33C1BCA544700E881BB /* AboutController */,
 				DAA44B461BBAFDC10045B7F0 /* MapController */,
 			);
@@ -228,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				DAED64151BBC728D0042355F /* ViewCells */,
+				DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */,
 			);
 			name = ViewElements;
 			sourceTree = "<group>";
@@ -387,7 +401,9 @@
 				DAED64131BBC6ABD0042355F /* Colors.swift in Sources */,
 				DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */,
 				DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */,
+				DA41EEBD1BD022F30025CDDC /* BuildingController.swift in Sources */,
 				DA2FE33E1BCA546800E881BB /* AboutController.swift in Sources */,
+				DA41EEBF1BD029E20025CDDC /* TopAlignedLabel.swift in Sources */,
 				DAA44B4A1BBB0C680045B7F0 /* Buildings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,8 +15,10 @@ class MapController: UIViewController {
     var searchResultsController:UITableViewController!
     var buildings = [Building]()
     var filteredBuildings = [Building]()
+    var selectedBuilding: Building?
     let cellIdentifier = "buildingCell"
     var locationManager = CLLocationManager()
+    var selectedAnnotation:MKAnnotation?
     
     @IBAction func showAboutInfo(sender: AnyObject) {
     }
@@ -62,7 +64,7 @@ class MapController: UIViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: Colors.text]
         self.navigationController?.toolbar.barTintColor = Colors.background
         self.navigationController?.toolbar.tintColor = Colors.background
-        
+        self.navigationController?.navigationBar.tintColor = Colors.text
     }
     
     func initializeSearch(){
@@ -166,7 +168,7 @@ extension MapController : MKMapViewDelegate{
                 view = dequeuedView
             }
             else{
-                let button = UIButton(type: .DetailDisclosure)
+                let button = UIButton(type: .InfoDark)
                 view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.rightCalloutAccessoryView = button
@@ -177,10 +179,30 @@ extension MapController : MKMapViewDelegate{
         return nil
     }
     
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        selectedAnnotation = view.annotation
+    }
+    
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         let building = view.annotation as? Building
         if building != nil{
-            print(building?.id)
+            selectedBuilding = building
+            performSegueWithIdentifier("buildingDetails", sender: self)
+        }
+        else{
+            selectedBuilding = nil
+        }
+    }
+    
+    func hideCallout(){
+        mapView.deselectAnnotation(selectedAnnotation, animated: true)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let buildingController = segue.destinationViewController as? BuildingController{
+            buildingController.building = selectedBuilding
+            
+            hideCallout()
         }
     }
 }

@@ -10,12 +10,14 @@
 		DA2FE33B1BCA4C0000E881BB /* silvernet.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2FE33A1BCA4C0000E881BB /* silvernet.png */; settings = {ASSET_TAGS = (); }; };
 		DA2FE33E1BCA546800E881BB /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FE33D1BCA546800E881BB /* AboutController.swift */; settings = {ASSET_TAGS = (); }; };
 		DA2FE3401BCA56E700E881BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2FE33F1BCA56E700E881BB /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		DA2FE4811BD81D460006D9C6 /* Search_MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FE4801BD81D460006D9C6 /* Search_MapController.swift */; settings = {ASSET_TAGS = (); }; };
+		DA2FE4831BD81E060006D9C6 /* Map_MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FE4821BD81E060006D9C6 /* Map_MapController.swift */; settings = {ASSET_TAGS = (); }; };
 		DA3D54861BC14946006DA8D1 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3D54841BC14946006DA8D1 /* logo.png */; settings = {ASSET_TAGS = (); }; };
 		DA41EEBD1BD022F30025CDDC /* BuildingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41EEBC1BD022F30025CDDC /* BuildingController.swift */; settings = {ASSET_TAGS = (); }; };
 		DA41EEBF1BD029E20025CDDC /* TopAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */; settings = {ASSET_TAGS = (); }; };
 		DA51649A1BC05DC9007BF4D3 /* camp.gpx in Resources */ = {isa = PBXBuildFile; fileRef = DA5164991BC05DC9007BF4D3 /* camp.gpx */; settings = {ASSET_TAGS = (); }; };
 		DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */; };
-		DAA44B141BBAFC440045B7F0 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B131BBAFC440045B7F0 /* MapController.swift */; };
+		DAA44B141BBAFC440045B7F0 /* Base_MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B131BBAFC440045B7F0 /* Base_MapController.swift */; };
 		DAA44B171BBAFC440045B7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B151BBAFC440045B7F0 /* Main.storyboard */; };
 		DAA44B1C1BBAFC440045B7F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B1A1BBAFC440045B7F0 /* LaunchScreen.storyboard */; };
 		DAA44B271BBAFC440045B7F0 /* KampusSGGW_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B261BBAFC440045B7F0 /* KampusSGGW_iosTests.swift */; };
@@ -48,13 +50,15 @@
 		DA2FE33A1BCA4C0000E881BB /* silvernet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = silvernet.png; sourceTree = "<group>"; };
 		DA2FE33D1BCA546800E881BB /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
 		DA2FE33F1BCA56E700E881BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA2FE4801BD81D460006D9C6 /* Search_MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Search_MapController.swift; sourceTree = "<group>"; };
+		DA2FE4821BD81E060006D9C6 /* Map_MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map_MapController.swift; sourceTree = "<group>"; };
 		DA3D54841BC14946006DA8D1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DA41EEBC1BD022F30025CDDC /* BuildingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingController.swift; sourceTree = "<group>"; };
 		DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAlignedLabel.swift; sourceTree = "<group>"; };
 		DA5164991BC05DC9007BF4D3 /* camp.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = camp.gpx; sourceTree = "<group>"; };
 		DAA44B0E1BBAFC440045B7F0 /* KampusSGGW_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KampusSGGW_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAA44B131BBAFC440045B7F0 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		DAA44B131BBAFC440045B7F0 /* Base_MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_MapController.swift; sourceTree = "<group>"; };
 		DAA44B161BBAFC440045B7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAA44B1B1BBAFC440045B7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA44B1D1BBAFC440045B7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -232,7 +236,9 @@
 		DAA44B461BBAFDC10045B7F0 /* MapController */ = {
 			isa = PBXGroup;
 			children = (
-				DAA44B131BBAFC440045B7F0 /* MapController.swift */,
+				DAA44B131BBAFC440045B7F0 /* Base_MapController.swift */,
+				DA2FE4801BD81D460006D9C6 /* Search_MapController.swift */,
+				DA2FE4821BD81E060006D9C6 /* Map_MapController.swift */,
 			);
 			name = MapController;
 			sourceTree = "<group>";
@@ -396,13 +402,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA44B141BBAFC440045B7F0 /* MapController.swift in Sources */,
+				DA2FE4811BD81D460006D9C6 /* Search_MapController.swift in Sources */,
+				DAA44B141BBAFC440045B7F0 /* Base_MapController.swift in Sources */,
 				DAED64171BBC72A20042355F /* BuildingTableViewCell.swift in Sources */,
 				DAED64131BBC6ABD0042355F /* Colors.swift in Sources */,
 				DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */,
 				DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */,
 				DA41EEBD1BD022F30025CDDC /* BuildingController.swift in Sources */,
 				DA2FE33E1BCA546800E881BB /* AboutController.swift in Sources */,
+				DA2FE4831BD81E060006D9C6 /* Map_MapController.swift in Sources */,
 				DA41EEBF1BD029E20025CDDC /* TopAlignedLabel.swift in Sources */,
 				DAA44B4A1BBB0C680045B7F0 /* Buildings.swift in Sources */,
 			);

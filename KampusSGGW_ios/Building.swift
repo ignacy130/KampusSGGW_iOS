@@ -29,10 +29,10 @@ class Building: NSObject, MKAnnotation {
         self.searchText = (name + departments + firstLetters).lowercaseString
         self.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         self.location = CLLocation(latitude: latitude, longitude: longitude)
-        self.pin = Building.createPin(id, image: pin, size: CGSizeMake(24, 34))
+        self.pin = Building.createPin(id, image: pin)
 
         if active != nil{
-            self.activePin = Building.createPin(id, image: active!, size: CGSizeMake(30, 42))
+            self.activePin = Building.createPin(id, image: active!)
         }
         else{
             self.activePin = self.pin
@@ -48,7 +48,11 @@ class Building: NSObject, MKAnnotation {
     var subtitle: String?{
         return self.departments
     }
-    
+}
+
+//Static
+
+extension Building{
     class func fromJSON(json: NSDictionary) -> Building?{
         let id = json["id"] as? String
         let name = json["name"] as? String
@@ -83,7 +87,7 @@ class Building: NSObject, MKAnnotation {
         return nil
     }
     
-    class func createPin(text: String, image: String, size: CGSize) -> UIImage{
+    class func createPin(text: String, image: String) -> UIImage{
         let image = UIImage(named: image)!
         let color: UIColor = UIColor.blackColor()
         let font: UIFont = UIFont.boldSystemFontOfSize(12)
@@ -96,11 +100,11 @@ class Building: NSObject, MKAnnotation {
             NSParagraphStyleAttributeName: paragraph
         ]
         
-        UIGraphicsBeginImageContext(size)
+        UIGraphicsBeginImageContext(image.size)
         
-        image.drawInRect(CGRectMake(0, 0, size.width, size.height))
+        image.drawInRect(CGRectMake(0, 0, image.size.width, image.size.height))
         
-        let rect = CGRectMake(0, size.width/4, size.width, size.height)
+        let rect = CGRectMake(0, image.size.width/4, image.size.width, image.size.height)
         text.drawInRect(rect, withAttributes: attributes)
         
         let newImage = UIGraphicsGetImageFromCurrentImageContext()

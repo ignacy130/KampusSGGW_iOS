@@ -130,7 +130,7 @@
                                     <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="v21-Pw-6ke"/>
                                     <barButtonItem image="about" id="lTa-Bf-cck">
                                         <connections>
-                                            <segue destination="G0T-G8-LEC" kind="show" id="Dvn-CB-yqX"/>
+                                            <segue destination="G0T-G8-LEC" kind="show" id="wh7-Jv-I3C"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ZNM-dd-C8E"/>
@@ -170,7 +170,6 @@
         <!--Table View Controller-->
         <scene sceneID="nMk-oL-Whs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J6f-rY-JYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="SearchResultsTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Iwq-Iu-qMp" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" id="INc-YP-zrK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -227,6 +226,7 @@
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6f-rY-JYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="938.5" y="42.5"/>
         </scene>
@@ -346,10 +346,6 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="contentView" destination="Jo6-TA-Uv9" id="1c5-MV-kaH"/>
-                        <outlet property="scrollView" destination="wpH-Ba-glv" id="Ajn-wE-Axb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wtr-7i-wfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

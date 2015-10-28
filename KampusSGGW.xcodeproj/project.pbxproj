@@ -56,16 +56,16 @@
 		DA41EEBC1BD022F30025CDDC /* BuildingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingController.swift; sourceTree = "<group>"; };
 		DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAlignedLabel.swift; sourceTree = "<group>"; };
 		DA5164991BC05DC9007BF4D3 /* camp.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = camp.gpx; sourceTree = "<group>"; };
-		DAA44B0E1BBAFC440045B7F0 /* KampusSGGW_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KampusSGGW_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA44B0E1BBAFC440045B7F0 /* KampusSGGW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KampusSGGW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA44B131BBAFC440045B7F0 /* Base_MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_MapController.swift; sourceTree = "<group>"; };
 		DAA44B161BBAFC440045B7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAA44B1B1BBAFC440045B7F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA44B1D1BBAFC440045B7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAA44B221BBAFC440045B7F0 /* KampusSGGW_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KampusSGGW_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA44B221BBAFC440045B7F0 /* KampusSGGW.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KampusSGGW.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA44B261BBAFC440045B7F0 /* KampusSGGW_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KampusSGGW_iosTests.swift; sourceTree = "<group>"; };
 		DAA44B281BBAFC440045B7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAA44B2D1BBAFC440045B7F0 /* KampusSGGW_iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KampusSGGW_iosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA44B2D1BBAFC440045B7F0 /* KampusSGGW.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KampusSGGW.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA44B311BBAFC440045B7F0 /* KampusSGGW_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KampusSGGW_iosUITests.swift; sourceTree = "<group>"; };
 		DAA44B331BBAFC440045B7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA44B471BBB03D90045B7F0 /* Building.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
@@ -130,9 +130,9 @@
 		DAA44B0F1BBAFC440045B7F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DAA44B0E1BBAFC440045B7F0 /* KampusSGGW_ios.app */,
-				DAA44B221BBAFC440045B7F0 /* KampusSGGW_iosTests.xctest */,
-				DAA44B2D1BBAFC440045B7F0 /* KampusSGGW_iosUITests.xctest */,
+				DAA44B0E1BBAFC440045B7F0 /* KampusSGGW.app */,
+				DAA44B221BBAFC440045B7F0 /* KampusSGGW.xctest */,
+				DAA44B2D1BBAFC440045B7F0 /* KampusSGGW.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -263,9 +263,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DAA44B0D1BBAFC440045B7F0 /* KampusSGGW_ios */ = {
+		DAA44B0D1BBAFC440045B7F0 /* KampusSGGW */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAA44B361BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_ios" */;
+			buildConfigurationList = DAA44B361BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW" */;
 			buildPhases = (
 				DAA44B0A1BBAFC440045B7F0 /* Sources */,
 				DAA44B0B1BBAFC440045B7F0 /* Frameworks */,
@@ -275,14 +275,14 @@
 			);
 			dependencies = (
 			);
-			name = KampusSGGW_ios;
+			name = KampusSGGW;
 			productName = KampusSGGW_ios;
-			productReference = DAA44B0E1BBAFC440045B7F0 /* KampusSGGW_ios.app */;
+			productReference = DAA44B0E1BBAFC440045B7F0 /* KampusSGGW.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DAA44B211BBAFC440045B7F0 /* KampusSGGW_iosTests */ = {
+		DAA44B211BBAFC440045B7F0 /* KampusSGGWTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAA44B391BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_iosTests" */;
+			buildConfigurationList = DAA44B391BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGWTests" */;
 			buildPhases = (
 				DAA44B1E1BBAFC440045B7F0 /* Sources */,
 				DAA44B1F1BBAFC440045B7F0 /* Frameworks */,
@@ -293,14 +293,14 @@
 			dependencies = (
 				DAA44B241BBAFC440045B7F0 /* PBXTargetDependency */,
 			);
-			name = KampusSGGW_iosTests;
+			name = KampusSGGWTests;
 			productName = KampusSGGW_iosTests;
-			productReference = DAA44B221BBAFC440045B7F0 /* KampusSGGW_iosTests.xctest */;
+			productReference = DAA44B221BBAFC440045B7F0 /* KampusSGGW.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DAA44B2C1BBAFC440045B7F0 /* KampusSGGW_iosUITests */ = {
+		DAA44B2C1BBAFC440045B7F0 /* KampusSGGWUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DAA44B3C1BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_iosUITests" */;
+			buildConfigurationList = DAA44B3C1BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGWUITests" */;
 			buildPhases = (
 				DAA44B291BBAFC440045B7F0 /* Sources */,
 				DAA44B2A1BBAFC440045B7F0 /* Frameworks */,
@@ -311,9 +311,9 @@
 			dependencies = (
 				DAA44B2F1BBAFC440045B7F0 /* PBXTargetDependency */,
 			);
-			name = KampusSGGW_iosUITests;
+			name = KampusSGGWUITests;
 			productName = KampusSGGW_iosUITests;
-			productReference = DAA44B2D1BBAFC440045B7F0 /* KampusSGGW_iosUITests.xctest */;
+			productReference = DAA44B2D1BBAFC440045B7F0 /* KampusSGGW.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -327,7 +327,7 @@
 				TargetAttributes = {
 					DAA44B0D1BBAFC440045B7F0 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = QDYUNR2JCR;
+						DevelopmentTeam = 7QPRW782PC;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
@@ -346,7 +346,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DAA44B091BBAFC440045B7F0 /* Build configuration list for PBXProject "KampusSGGW_ios" */;
+			buildConfigurationList = DAA44B091BBAFC440045B7F0 /* Build configuration list for PBXProject "KampusSGGW" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -359,9 +359,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DAA44B0D1BBAFC440045B7F0 /* KampusSGGW_ios */,
-				DAA44B211BBAFC440045B7F0 /* KampusSGGW_iosTests */,
-				DAA44B2C1BBAFC440045B7F0 /* KampusSGGW_iosUITests */,
+				DAA44B0D1BBAFC440045B7F0 /* KampusSGGW */,
+				DAA44B211BBAFC440045B7F0 /* KampusSGGWTests */,
+				DAA44B2C1BBAFC440045B7F0 /* KampusSGGWUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -437,12 +437,12 @@
 /* Begin PBXTargetDependency section */
 		DAA44B241BBAFC440045B7F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DAA44B0D1BBAFC440045B7F0 /* KampusSGGW_ios */;
+			target = DAA44B0D1BBAFC440045B7F0 /* KampusSGGW */;
 			targetProxy = DAA44B231BBAFC440045B7F0 /* PBXContainerItemProxy */;
 		};
 		DAA44B2F1BBAFC440045B7F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DAA44B0D1BBAFC440045B7F0 /* KampusSGGW_ios */;
+			target = DAA44B0D1BBAFC440045B7F0 /* KampusSGGW */;
 			targetProxy = DAA44B2E1BBAFC440045B7F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -552,10 +552,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pawel Sygnowski (7QPRW782PC)";
 				INFOPLIST_FILE = KampusSGGW_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qext.CampSGGW;
+				PRODUCT_NAME = KampusSGGW;
 			};
 			name = Debug;
 		};
@@ -563,10 +564,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pawel Sygnowski (7QPRW782PC)";
 				INFOPLIST_FILE = KampusSGGW_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qext.CampSGGW;
+				PRODUCT_NAME = KampusSGGW;
 			};
 			name = Release;
 		};
@@ -577,8 +579,8 @@
 				INFOPLIST_FILE = KampusSGGW_iosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-iosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KampusSGGW_ios.app/KampusSGGW_ios";
+				PRODUCT_NAME = KampusSGGW;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KampusSGGW.app/KampusSGGW";
 			};
 			name = Debug;
 		};
@@ -589,8 +591,8 @@
 				INFOPLIST_FILE = KampusSGGW_iosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-iosTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KampusSGGW_ios.app/KampusSGGW_ios";
+				PRODUCT_NAME = KampusSGGW;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KampusSGGW.app/KampusSGGW";
 			};
 			name = Release;
 		};
@@ -600,7 +602,7 @@
 				INFOPLIST_FILE = KampusSGGW_iosUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-iosUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KampusSGGW;
 				TEST_TARGET_NAME = KampusSGGW_ios;
 				USES_XCTRUNNER = YES;
 			};
@@ -612,7 +614,7 @@
 				INFOPLIST_FILE = KampusSGGW_iosUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.qext.KampusSGGW-iosUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = KampusSGGW;
 				TEST_TARGET_NAME = KampusSGGW_ios;
 				USES_XCTRUNNER = YES;
 			};
@@ -621,7 +623,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DAA44B091BBAFC440045B7F0 /* Build configuration list for PBXProject "KampusSGGW_ios" */ = {
+		DAA44B091BBAFC440045B7F0 /* Build configuration list for PBXProject "KampusSGGW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA44B341BBAFC440045B7F0 /* Debug */,
@@ -630,7 +632,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAA44B361BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_ios" */ = {
+		DAA44B361BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA44B371BBAFC440045B7F0 /* Debug */,
@@ -639,7 +641,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAA44B391BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_iosTests" */ = {
+		DAA44B391BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGWTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA44B3A1BBAFC440045B7F0 /* Debug */,
@@ -648,7 +650,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DAA44B3C1BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGW_iosUITests" */ = {
+		DAA44B3C1BBAFC440045B7F0 /* Build configuration list for PBXNativeTarget "KampusSGGWUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DAA44B3D1BBAFC440045B7F0 /* Debug */,

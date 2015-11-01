@@ -17,6 +17,9 @@
 		DA41EEBD1BD022F30025CDDC /* BuildingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41EEBC1BD022F30025CDDC /* BuildingController.swift */; };
 		DA41EEBF1BD029E20025CDDC /* TopAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */; };
 		DA51649A1BC05DC9007BF4D3 /* camp.gpx in Resources */ = {isa = PBXBuildFile; fileRef = DA5164991BC05DC9007BF4D3 /* camp.gpx */; };
+		DA642BA71BE6B32100301E62 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA642BA61BE6B32100301E62 /* EventController.swift */; };
+		DA9622D51BE542E700096592 /* PartyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9622D41BE542E700096592 /* PartyController.swift */; };
+		DA9622D71BE5686800096592 /* FacebookPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9622D61BE5686800096592 /* FacebookPostTableViewCell.swift */; };
 		DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */; };
 		DAA44B141BBAFC440045B7F0 /* Base_MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B131BBAFC440045B7F0 /* Base_MapController.swift */; };
 		DAA44B171BBAFC440045B7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B151BBAFC440045B7F0 /* Main.storyboard */; };
@@ -60,6 +63,9 @@
 		DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAlignedLabel.swift; sourceTree = "<group>"; };
 		DA4596701BE2CB6800377B1E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DA5164991BC05DC9007BF4D3 /* camp.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = camp.gpx; sourceTree = "<group>"; };
+		DA642BA61BE6B32100301E62 /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		DA9622D41BE542E700096592 /* PartyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyController.swift; sourceTree = "<group>"; };
+		DA9622D61BE5686800096592 /* FacebookPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPostTableViewCell.swift; sourceTree = "<group>"; };
 		DAA44B0E1BBAFC440045B7F0 /* KampusSGGW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KampusSGGW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA44B131BBAFC440045B7F0 /* Base_MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_MapController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,29 @@
 			name = BuildingController;
 			sourceTree = "<group>";
 		};
+		DA642BA81BE6B33500301E62 /* EventController */ = {
+			isa = PBXGroup;
+			children = (
+				DA642BA61BE6B32100301E62 /* EventController.swift */,
+			);
+			name = EventController;
+			sourceTree = "<group>";
+		};
+		DA9622D01BE5427C00096592 /* EventController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = EventController;
+			sourceTree = "<group>";
+		};
+		DA9622D11BE5428800096592 /* PartyController */ = {
+			isa = PBXGroup;
+			children = (
+				DA9622D41BE542E700096592 /* PartyController.swift */,
+			);
+			name = PartyController;
+			sourceTree = "<group>";
+		};
 		DAA44B051BBAFC440045B7F0 = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +235,9 @@
 		DAA44B401BBAFD690045B7F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DA642BA81BE6B33500301E62 /* EventController */,
+				DA9622D11BE5428800096592 /* PartyController */,
+				DA9622D01BE5427C00096592 /* EventController */,
 				DA41EEBB1BD022E30025CDDC /* BuildingController */,
 				DA2FE33C1BCA544700E881BB /* AboutController */,
 				DAA44B461BBAFDC10045B7F0 /* MapController */,
@@ -282,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				DAED64161BBC72A20042355F /* BuildingTableViewCell.swift */,
+				DA9622D61BE5686800096592 /* FacebookPostTableViewCell.swift */,
 			);
 			name = ViewCells;
 			sourceTree = "<group>";
@@ -479,8 +512,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9622D51BE542E700096592 /* PartyController.swift in Sources */,
 				DA2FE4811BD81D460006D9C6 /* Search_MapController.swift in Sources */,
 				DAA44B141BBAFC440045B7F0 /* Base_MapController.swift in Sources */,
+				DA9622D71BE5686800096592 /* FacebookPostTableViewCell.swift in Sources */,
 				DAED64171BBC72A20042355F /* BuildingTableViewCell.swift in Sources */,
 				DAED64131BBC6ABD0042355F /* Colors.swift in Sources */,
 				DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */,
@@ -489,6 +524,7 @@
 				DA2FE33E1BCA546800E881BB /* AboutController.swift in Sources */,
 				DA2FE4831BD81E060006D9C6 /* Map_MapController.swift in Sources */,
 				DA41EEBF1BD029E20025CDDC /* TopAlignedLabel.swift in Sources */,
+				DA642BA71BE6B32100301E62 /* EventController.swift in Sources */,
 				DAA44B4A1BBB0C680045B7F0 /* Buildings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,11 +666,13 @@
 			baseConfigurationReference = 79D2EA76100EF5E0D12AB0E9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Pawel Sygnowski (7QPRW782PC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KampusSGGW_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qext.CampSGGW;
 				PRODUCT_NAME = KampusSGGW;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KampusSGGW_ios/Bridging-Header.h";
 			};
 			name = Debug;
@@ -644,11 +682,13 @@
 			baseConfigurationReference = DF36E9B851E89CF4E69355BB /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Pawel Sygnowski (7QPRW782PC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = KampusSGGW_ios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qext.CampSGGW;
 				PRODUCT_NAME = KampusSGGW;
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "KampusSGGW_ios/Bridging-Header.h";
 			};
 			name = Release;

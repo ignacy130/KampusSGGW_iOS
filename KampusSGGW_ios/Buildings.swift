@@ -10,26 +10,15 @@ import UIKit
 
 class Buildings: NSObject {
     class func getAll() -> [Building]{
-        var toReturn = [Building]()
-        let file = NSBundle.mainBundle().pathForResource("Buildings", ofType: "json")
-        if let content = NSData(contentsOfFile: file!){
-            do{
-                let json = try NSJSONSerialization.JSONObjectWithData(content, options: .MutableContainers)
-                
-                if let buildings = json as? NSArray{
-                    for building in buildings{
-                        if let values = building as? NSDictionary{
-                            if let object = Building.fromJSON(values){
-                                toReturn.append(object)
-                            }
-                        }
-                    }
-                }
+        let objects = Json.getObjectsFromFile("Buildings");
+        
+        var buildings = [Building]()
+        for object in objects{
+            if let building = Building.fromJSON(object){
+                buildings.append(building)
             }
-            catch let error as NSError{
-                print(error)
-            }
+
         }
-        return toReturn
+        return buildings
     }
 }

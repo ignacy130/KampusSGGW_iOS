@@ -20,6 +20,12 @@
 		DA642BA71BE6B32100301E62 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA642BA61BE6B32100301E62 /* EventController.swift */; };
 		DA9622D51BE542E700096592 /* PartyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9622D41BE542E700096592 /* PartyController.swift */; };
 		DA9622D71BE5686800096592 /* FacebookPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9622D61BE5686800096592 /* FacebookPostTableViewCell.swift */; };
+		DA9B53911BEA9B3D00D90BFE /* LinksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B53901BEA9B3D00D90BFE /* LinksController.swift */; };
+		DA9B53931BEA9DA300D90BFE /* LinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B53921BEA9DA300D90BFE /* LinkTableViewCell.swift */; };
+		DA9B53951BEA9EE300D90BFE /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B53941BEA9EE300D90BFE /* Link.swift */; };
+		DA9B53971BEAA82300D90BFE /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B53961BEAA82300D90BFE /* Links.swift */; };
+		DA9B53991BEAA8A900D90BFE /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B53981BEAA8A900D90BFE /* Json.swift */; };
+		DA9B539B1BED403800D90BFE /* Links.json in Resources */ = {isa = PBXBuildFile; fileRef = DA9B539A1BED403800D90BFE /* Links.json */; };
 		DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */; };
 		DAA44B141BBAFC440045B7F0 /* Base_MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA44B131BBAFC440045B7F0 /* Base_MapController.swift */; };
 		DAA44B171BBAFC440045B7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B151BBAFC440045B7F0 /* Main.storyboard */; };
@@ -66,6 +72,12 @@
 		DA642BA61BE6B32100301E62 /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		DA9622D41BE542E700096592 /* PartyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyController.swift; sourceTree = "<group>"; };
 		DA9622D61BE5686800096592 /* FacebookPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPostTableViewCell.swift; sourceTree = "<group>"; };
+		DA9B53901BEA9B3D00D90BFE /* LinksController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinksController.swift; sourceTree = "<group>"; };
+		DA9B53921BEA9DA300D90BFE /* LinkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkTableViewCell.swift; sourceTree = "<group>"; };
+		DA9B53941BEA9EE300D90BFE /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		DA9B53961BEAA82300D90BFE /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		DA9B53981BEAA8A900D90BFE /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		DA9B539A1BED403800D90BFE /* Links.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Links.json; sourceTree = "<group>"; };
 		DAA44B0E1BBAFC440045B7F0 /* KampusSGGW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KampusSGGW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA44B111BBAFC440045B7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA44B131BBAFC440045B7F0 /* Base_MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base_MapController.swift; sourceTree = "<group>"; };
@@ -153,19 +165,20 @@
 			name = EventController;
 			sourceTree = "<group>";
 		};
-		DA9622D01BE5427C00096592 /* EventController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = EventController;
-			sourceTree = "<group>";
-		};
 		DA9622D11BE5428800096592 /* PartyController */ = {
 			isa = PBXGroup;
 			children = (
 				DA9622D41BE542E700096592 /* PartyController.swift */,
 			);
 			name = PartyController;
+			sourceTree = "<group>";
+		};
+		DA9B538F1BEA9B0D00D90BFE /* LinksController */ = {
+			isa = PBXGroup;
+			children = (
+				DA9B53901BEA9B3D00D90BFE /* LinksController.swift */,
+			);
+			name = LinksController;
 			sourceTree = "<group>";
 		};
 		DAA44B051BBAFC440045B7F0 = {
@@ -235,9 +248,9 @@
 		DAA44B401BBAFD690045B7F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DA9B538F1BEA9B0D00D90BFE /* LinksController */,
 				DA642BA81BE6B33500301E62 /* EventController */,
 				DA9622D11BE5428800096592 /* PartyController */,
-				DA9622D01BE5427C00096592 /* EventController */,
 				DA41EEBB1BD022E30025CDDC /* BuildingController */,
 				DA2FE33C1BCA544700E881BB /* AboutController */,
 				DAA44B461BBAFDC10045B7F0 /* MapController */,
@@ -249,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA44B471BBB03D90045B7F0 /* Building.swift */,
+				DA9B53941BEA9EE300D90BFE /* Link.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -256,6 +270,7 @@
 		DAA44B421BBAFD830045B7F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DA9B539A1BED403800D90BFE /* Links.json */,
 				DA2FE33F1BCA56E700E881BB /* Assets.xcassets */,
 				DA2FE33A1BCA4C0000E881BB /* silvernet.png */,
 				DA3D54841BC14946006DA8D1 /* logo.png */,
@@ -287,6 +302,8 @@
 				DAA44B491BBB0C680045B7F0 /* Buildings.swift */,
 				DAED64121BBC6ABD0042355F /* Colors.swift */,
 				DA4596701BE2CB6800377B1E /* Bridging-Header.h */,
+				DA9B53961BEAA82300D90BFE /* Links.swift */,
+				DA9B53981BEAA8A900D90BFE /* Json.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -315,6 +332,7 @@
 			children = (
 				DAED64161BBC72A20042355F /* BuildingTableViewCell.swift */,
 				DA9622D61BE5686800096592 /* FacebookPostTableViewCell.swift */,
+				DA9B53921BEA9DA300D90BFE /* LinkTableViewCell.swift */,
 			);
 			name = ViewCells;
 			sourceTree = "<group>";
@@ -436,6 +454,7 @@
 				DA51649A1BC05DC9007BF4D3 /* camp.gpx in Resources */,
 				DAA44B1C1BBAFC440045B7F0 /* LaunchScreen.storyboard in Resources */,
 				DA2FE33B1BCA4C0000E881BB /* silvernet.png in Resources */,
+				DA9B539B1BED403800D90BFE /* Links.json in Resources */,
 				DAA44B171BBAFC440045B7F0 /* Main.storyboard in Resources */,
 				DAA44B4C1BBB0CE70045B7F0 /* Buildings.json in Resources */,
 				DA2FE3401BCA56E700E881BB /* Assets.xcassets in Resources */,
@@ -512,16 +531,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9B53951BEA9EE300D90BFE /* Link.swift in Sources */,
 				DA9622D51BE542E700096592 /* PartyController.swift in Sources */,
 				DA2FE4811BD81D460006D9C6 /* Search_MapController.swift in Sources */,
 				DAA44B141BBAFC440045B7F0 /* Base_MapController.swift in Sources */,
+				DA9B53931BEA9DA300D90BFE /* LinkTableViewCell.swift in Sources */,
 				DA9622D71BE5686800096592 /* FacebookPostTableViewCell.swift in Sources */,
 				DAED64171BBC72A20042355F /* BuildingTableViewCell.swift in Sources */,
 				DAED64131BBC6ABD0042355F /* Colors.swift in Sources */,
 				DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */,
+				DA9B53911BEA9B3D00D90BFE /* LinksController.swift in Sources */,
 				DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */,
 				DA41EEBD1BD022F30025CDDC /* BuildingController.swift in Sources */,
 				DA2FE33E1BCA546800E881BB /* AboutController.swift in Sources */,
+				DA9B53991BEAA8A900D90BFE /* Json.swift in Sources */,
+				DA9B53971BEAA82300D90BFE /* Links.swift in Sources */,
 				DA2FE4831BD81E060006D9C6 /* Map_MapController.swift in Sources */,
 				DA41EEBF1BD029E20025CDDC /* TopAlignedLabel.swift in Sources */,
 				DA642BA71BE6B32100301E62 /* EventController.swift in Sources */,

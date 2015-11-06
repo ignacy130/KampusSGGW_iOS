@@ -1,0 +1,45 @@
+ [
+  {
+    "title": "Samorząd Studentów SGGW",
+    "picture": "group",
+    "url": "https://www.facebook.com/SamorzadStudentowSGGW",
+    "facebookId": "291726291971"
+  },
+  {
+    "title": "Ursynalia",
+    "picture": "music",
+    "url": "http://ursynalia.pl/"
+  },
+  {
+    "title": "Dni SGGW",
+    "picture": "calendar",
+    "url": "http://www.sggw.pl/dla-mediow/biuro-promocji/dni-sggw"
+  },
+  {
+    "title": "Organizacje studenckie",
+    "picture": "student",
+    "url": "http://www.sggw.pl/organizacje-studenckie"
+  },
+  {
+    "title": "Portal kół naukowych",
+    "picture": "wokol",
+    "url": "http://wokol.silver.sggw.pl"
+  },
+  {
+    "title": "AZS",
+    "picture": "sport",
+    "url": "http://www.azs.sggw.pl/"
+  },
+  {
+    "title": "Silver .NET",
+    "picture": "silver",
+    "url": "https://www.facebook.com/silvernetgroupsggw",
+    "facebookId": "428765197142533"
+  },
+  {
+    "title": "Kampus SGGW na FB",
+    "picture": "camp",
+    "url": "https://www.facebook.com/kampussggw",
+    "facebookId": "775597729176159"
+  }
+  ]

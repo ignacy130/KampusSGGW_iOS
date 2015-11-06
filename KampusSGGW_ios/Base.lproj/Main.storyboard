@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Hv4-B0-lzb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4bG-Ll-vyb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -133,6 +133,12 @@
                                             <segue destination="G0T-G8-LEC" kind="show" id="wh7-Jv-I3C"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="wRT-s9-edf"/>
+                                    <barButtonItem image="news" id="wMI-82-qUm">
+                                        <connections>
+                                            <segue destination="Hv4-B0-lzb" kind="show" id="sc2-ls-UMU"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ZNM-dd-C8E"/>
                                 </items>
                                 <color key="tintColor" red="0.2784313725" green="0.074509803920000006" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -235,7 +241,7 @@
             <objects>
                 <tableViewController id="YcR-F6-tXG" customClass="EventController" customModule="KampusSGGW" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="5jg-J3-Slc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -306,7 +312,7 @@
                             <outlet property="delegate" destination="YcR-F6-tXG" id="2Dy-3A-KJX"/>
                         </connections>
                     </tableView>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Samorząd" image="group" id="pCs-qV-OZ2"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
@@ -315,32 +321,63 @@
             <point key="canvasLocation" x="2494.5" y="-0.5"/>
         </scene>
         <!--Przydatne linki-->
-        <scene sceneID="T1f-Us-WjS">
+        <scene sceneID="QZU-x0-c2n">
             <objects>
-                <viewController id="7gO-dG-Ktj" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Sae-0O-kf7"/>
-                        <viewControllerLayoutGuide type="bottom" id="mhc-ue-MG0"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="24h-EG-azg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController modalPresentationStyle="currentContext" id="UcM-4f-L58" customClass="LinksController" customModule="KampusSGGW" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="68" sectionHeaderHeight="28" sectionFooterHeight="28" id="FQ9-H0-p6H">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Przydatne linki" image="links" id="aYP-6Z-1sY"/>
+                        <color key="backgroundColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="linkCell" rowHeight="68" id="1cW-yQ-K0F" customClass="LinkTableViewCell" customModule="KampusSGGW" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="68"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1cW-yQ-K0F" id="f5N-3t-59U">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ie-TF-Xag">
+                                            <rect key="frame" x="8" y="8" width="52" height="52"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaZ-0J-79W">
+                                            <rect key="frame" x="68" y="23" width="299" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="picture" destination="2Ie-TF-Xag" id="P2t-MJ-PJw"/>
+                                    <outlet property="title" destination="SaZ-0J-79W" id="kqp-Hk-XPg"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UcM-4f-L58" id="sKv-XF-wSY"/>
+                            <outlet property="delegate" destination="UcM-4f-L58" id="UMJ-3s-M7C"/>
+                        </connections>
+                    </tableView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Przydatne linki" image="links" id="70B-ZL-Asg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="soD-Nh-Tbo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1j-Gy-3Uj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682.5" y="843.5"/>
+            <point key="canvasLocation" x="1647.5" y="803.5"/>
         </scene>
         <!--Imprezy-->
         <scene sceneID="VQ7-QO-e9z">
             <objects>
                 <tableViewController id="UNJ-Zv-hPJ" customClass="PartyController" customModule="KampusSGGW" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="FTF-Jh-kx8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.78039215689999997" green="0.98431372549999996" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -410,7 +447,7 @@
                             <outlet property="delegate" destination="UNJ-Zv-hPJ" id="Efb-Hh-cKm"/>
                         </connections>
                     </tableView>
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="Imprezy" image="party" id="gGq-lg-es0"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
@@ -543,6 +580,7 @@
         <scene sceneID="Sq7-hj-vsc">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Hv4-B0-lzb" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="BeD-on-otw">
                         <autoresizingMask key="autoresizingMask"/>
@@ -553,12 +591,12 @@
                     <connections>
                         <segue destination="YcR-F6-tXG" kind="relationship" relationship="viewControllers" id="CPt-eq-nb5"/>
                         <segue destination="UNJ-Zv-hPJ" kind="relationship" relationship="viewControllers" id="0pO-m1-DiJ"/>
-                        <segue destination="7gO-dG-Ktj" kind="relationship" relationship="viewControllers" id="btP-3f-0RQ"/>
+                        <segue destination="UcM-4f-L58" kind="relationship" relationship="viewControllers" id="Ki3-5r-4N6"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gax-mm-eVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1795" y="-1"/>
+            <point key="canvasLocation" x="1576.5" y="-907.5"/>
         </scene>
     </scenes>
     <resources>
@@ -567,6 +605,7 @@
         <image name="group" width="32" height="32"/>
         <image name="links" width="32" height="32"/>
         <image name="location" width="32" height="32"/>
+        <image name="news" width="32" height="32"/>
         <image name="party" width="32" height="32"/>
         <image name="silvernet.png" width="1648" height="1078"/>
     </resources>

@@ -17,9 +17,7 @@ class LinksController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         let link = links[indexPath.row]
-        print(indexPath.row)
         Link.open(link.url, facebookId: link.facebookId)
     }
 

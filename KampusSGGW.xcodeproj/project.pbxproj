@@ -37,6 +37,10 @@
 		DAA44B4C1BBB0CE70045B7F0 /* Buildings.json in Resources */ = {isa = PBXBuildFile; fileRef = DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */; };
 		DAED64131BBC6ABD0042355F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAED64121BBC6ABD0042355F /* Colors.swift */; };
 		DAED64171BBC72A20042355F /* BuildingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAED64161BBC72A20042355F /* BuildingTableViewCell.swift */; };
+		DAF9CC2E1BEE1C4500AFA667 /* FacebookPostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9CC2D1BEE1C4500AFA667 /* FacebookPostsController.swift */; };
+		DAF9CC301BEE1DAE00AFA667 /* FacebookPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9CC2F1BEE1DAE00AFA667 /* FacebookPost.swift */; };
+		DAF9CC321BEE1E4C00AFA667 /* FacebookGraphAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9CC311BEE1E4C00AFA667 /* FacebookGraphAPI.swift */; };
+		DAF9CC341BEE1EAF00AFA667 /* FacebookConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9CC331BEE1EAF00AFA667 /* FacebookConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		DAA44B4B1BBB0CE70045B7F0 /* Buildings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Buildings.json; sourceTree = "<group>"; };
 		DAED64121BBC6ABD0042355F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DAED64161BBC72A20042355F /* BuildingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTableViewCell.swift; sourceTree = "<group>"; };
+		DAF9CC2D1BEE1C4500AFA667 /* FacebookPostsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPostsController.swift; sourceTree = "<group>"; };
+		DAF9CC2F1BEE1DAE00AFA667 /* FacebookPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPost.swift; sourceTree = "<group>"; };
+		DAF9CC311BEE1E4C00AFA667 /* FacebookGraphAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookGraphAPI.swift; sourceTree = "<group>"; };
+		DAF9CC331BEE1EAF00AFA667 /* FacebookConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookConfig.swift; sourceTree = "<group>"; };
 		DF36E9B851E89CF4E69355BB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +256,7 @@
 		DAA44B401BBAFD690045B7F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DAF9CC2C1BEE1C2800AFA667 /* FacebookPostsController */,
 				DA9B538F1BEA9B0D00D90BFE /* LinksController */,
 				DA642BA81BE6B33500301E62 /* EventController */,
 				DA9622D11BE5428800096592 /* PartyController */,
@@ -263,6 +272,8 @@
 			children = (
 				DAA44B471BBB03D90045B7F0 /* Building.swift */,
 				DA9B53941BEA9EE300D90BFE /* Link.swift */,
+				DAF9CC2F1BEE1DAE00AFA667 /* FacebookPost.swift */,
+				DAF9CC331BEE1EAF00AFA667 /* FacebookConfig.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -304,6 +315,7 @@
 				DA4596701BE2CB6800377B1E /* Bridging-Header.h */,
 				DA9B53961BEAA82300D90BFE /* Links.swift */,
 				DA9B53981BEAA8A900D90BFE /* Json.swift */,
+				DAF9CC311BEE1E4C00AFA667 /* FacebookGraphAPI.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -335,6 +347,14 @@
 				DA9B53921BEA9DA300D90BFE /* LinkTableViewCell.swift */,
 			);
 			name = ViewCells;
+			sourceTree = "<group>";
+		};
+		DAF9CC2C1BEE1C2800AFA667 /* FacebookPostsController */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9CC2D1BEE1C4500AFA667 /* FacebookPostsController.swift */,
+			);
+			name = FacebookPostsController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,7 +561,11 @@
 				DAED64131BBC6ABD0042355F /* Colors.swift in Sources */,
 				DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */,
 				DA9B53911BEA9B3D00D90BFE /* LinksController.swift in Sources */,
+				DAF9CC301BEE1DAE00AFA667 /* FacebookPost.swift in Sources */,
 				DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */,
+				DAF9CC2E1BEE1C4500AFA667 /* FacebookPostsController.swift in Sources */,
+				DAF9CC321BEE1E4C00AFA667 /* FacebookGraphAPI.swift in Sources */,
+				DAF9CC341BEE1EAF00AFA667 /* FacebookConfig.swift in Sources */,
 				DA41EEBD1BD022F30025CDDC /* BuildingController.swift in Sources */,
 				DA2FE33E1BCA546800E881BB /* AboutController.swift in Sources */,
 				DA9B53991BEAA8A900D90BFE /* Json.swift in Sources */,

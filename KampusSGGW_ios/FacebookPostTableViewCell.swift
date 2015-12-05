@@ -30,13 +30,11 @@ class ImageLoader{
     class func getImageFromUrl(pictureUrl: String, onDownload: NSData -> Void){
         let url = NSURL(string: pictureUrl)
         let downloadTask = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) -> Void in
-            print(error)
             guard error == nil && data != nil else{
                 print(error)
                 //assignTo = default image
                 return
             }
-            print("image downloaded")
             onDownload(data!)
         }
         

@@ -23,7 +23,6 @@ class FacebookGraphAPI{
             if let data = json["data"] as? NSArray{
                 for item in data{
                     if let post = item as? NSDictionary{
-                        print(post)
                         if let id = post["id"] as? String, let message = post["message"] as? String, let picture = post["picture"] as? String{
                             posts.append(FacebookPost(id: id, message: message, picture: picture, objectId: post["object_id"] as? String))
                         }

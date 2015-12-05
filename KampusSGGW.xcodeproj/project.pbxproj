@@ -17,6 +17,11 @@
 		DA41EEBD1BD022F30025CDDC /* BuildingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41EEBC1BD022F30025CDDC /* BuildingController.swift */; };
 		DA41EEBF1BD029E20025CDDC /* TopAlignedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */; };
 		DA51649A1BC05DC9007BF4D3 /* camp.gpx in Resources */ = {isa = PBXBuildFile; fileRef = DA5164991BC05DC9007BF4D3 /* camp.gpx */; };
+		DA5559571C12F53C00A5F8D6 /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA5559551C12F53C00A5F8D6 /* Models.xcdatamodeld */; };
+		DA5559591C12F78300A5F8D6 /* FacebookPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5559581C12F78300A5F8D6 /* FacebookPosts.swift */; };
+		DA55595B1C1303FA00A5F8D6 /* ManagedFacebookPostRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55595A1C1303FA00A5F8D6 /* ManagedFacebookPostRefresh.swift */; };
+		DA55595D1C130AF400A5F8D6 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55595C1C130AF400A5F8D6 /* NSDate.swift */; };
+		DA5559601C1313AC00A5F8D6 /* FacebookPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55595F1C1313AC00A5F8D6 /* FacebookPost.swift */; };
 		DA642BA71BE6B32100301E62 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA642BA61BE6B32100301E62 /* EventController.swift */; };
 		DA9622D51BE542E700096592 /* PartyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9622D41BE542E700096592 /* PartyController.swift */; };
 		DA9622D71BE5686800096592 /* FacebookPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9622D61BE5686800096592 /* FacebookPostTableViewCell.swift */; };
@@ -38,7 +43,7 @@
 		DAED64131BBC6ABD0042355F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAED64121BBC6ABD0042355F /* Colors.swift */; };
 		DAED64171BBC72A20042355F /* BuildingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAED64161BBC72A20042355F /* BuildingTableViewCell.swift */; };
 		DAF9CC2E1BEE1C4500AFA667 /* FacebookPostsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9CC2D1BEE1C4500AFA667 /* FacebookPostsController.swift */; };
-		DAF9CC301BEE1DAE00AFA667 /* FacebookPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9CC2F1BEE1DAE00AFA667 /* FacebookPost.swift */; };
+		DAF9CC301BEE1DAE00AFA667 /* ManagedFacebookPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9CC2F1BEE1DAE00AFA667 /* ManagedFacebookPost.swift */; };
 		DAF9CC321BEE1E4C00AFA667 /* FacebookGraphAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9CC311BEE1E4C00AFA667 /* FacebookGraphAPI.swift */; };
 		DAF9CC341BEE1EAF00AFA667 /* FacebookConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF9CC331BEE1EAF00AFA667 /* FacebookConfig.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +78,11 @@
 		DA41EEBE1BD029E20025CDDC /* TopAlignedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAlignedLabel.swift; sourceTree = "<group>"; };
 		DA4596701BE2CB6800377B1E /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		DA5164991BC05DC9007BF4D3 /* camp.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = camp.gpx; sourceTree = "<group>"; };
+		DA5559561C12F53C00A5F8D6 /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
+		DA5559581C12F78300A5F8D6 /* FacebookPosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPosts.swift; sourceTree = "<group>"; };
+		DA55595A1C1303FA00A5F8D6 /* ManagedFacebookPostRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedFacebookPostRefresh.swift; sourceTree = "<group>"; };
+		DA55595C1C130AF400A5F8D6 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		DA55595F1C1313AC00A5F8D6 /* FacebookPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPost.swift; sourceTree = "<group>"; };
 		DA642BA61BE6B32100301E62 /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		DA9622D41BE542E700096592 /* PartyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyController.swift; sourceTree = "<group>"; };
 		DA9622D61BE5686800096592 /* FacebookPostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPostTableViewCell.swift; sourceTree = "<group>"; };
@@ -100,7 +110,7 @@
 		DAED64121BBC6ABD0042355F /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DAED64161BBC72A20042355F /* BuildingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTableViewCell.swift; sourceTree = "<group>"; };
 		DAF9CC2D1BEE1C4500AFA667 /* FacebookPostsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPostsController.swift; sourceTree = "<group>"; };
-		DAF9CC2F1BEE1DAE00AFA667 /* FacebookPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookPost.swift; sourceTree = "<group>"; };
+		DAF9CC2F1BEE1DAE00AFA667 /* ManagedFacebookPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedFacebookPost.swift; sourceTree = "<group>"; };
 		DAF9CC311BEE1E4C00AFA667 /* FacebookGraphAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookGraphAPI.swift; sourceTree = "<group>"; };
 		DAF9CC331BEE1EAF00AFA667 /* FacebookConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookConfig.swift; sourceTree = "<group>"; };
 		DF36E9B851E89CF4E69355BB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +175,15 @@
 			name = BuildingController;
 			sourceTree = "<group>";
 		};
+		DA55595E1C13133F00A5F8D6 /* ManagedModels */ = {
+			isa = PBXGroup;
+			children = (
+				DAF9CC2F1BEE1DAE00AFA667 /* ManagedFacebookPost.swift */,
+				DA55595A1C1303FA00A5F8D6 /* ManagedFacebookPostRefresh.swift */,
+			);
+			name = ManagedModels;
+			sourceTree = "<group>";
+		};
 		DA642BA81BE6B33500301E62 /* EventController */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +240,7 @@
 				DAA44B401BBAFD690045B7F0 /* Controllers */,
 				DAA44B431BBAFD8B0045B7F0 /* Views */,
 				DAA44B421BBAFD830045B7F0 /* Resources */,
+				DA55595E1C13133F00A5F8D6 /* ManagedModels */,
 				DAA44B411BBAFD710045B7F0 /* Models */,
 				DAA44B451BBAFDB00045B7F0 /* Utils */,
 			);
@@ -272,8 +292,9 @@
 			children = (
 				DAA44B471BBB03D90045B7F0 /* Building.swift */,
 				DA9B53941BEA9EE300D90BFE /* Link.swift */,
-				DAF9CC2F1BEE1DAE00AFA667 /* FacebookPost.swift */,
 				DAF9CC331BEE1EAF00AFA667 /* FacebookConfig.swift */,
+				DA5559551C12F53C00A5F8D6 /* Models.xcdatamodeld */,
+				DA55595F1C1313AC00A5F8D6 /* FacebookPost.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -316,6 +337,8 @@
 				DA9B53961BEAA82300D90BFE /* Links.swift */,
 				DA9B53981BEAA8A900D90BFE /* Json.swift */,
 				DAF9CC311BEE1E4C00AFA667 /* FacebookGraphAPI.swift */,
+				DA5559581C12F78300A5F8D6 /* FacebookPosts.swift */,
+				DA55595C1C130AF400A5F8D6 /* NSDate.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -552,8 +575,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9B53951BEA9EE300D90BFE /* Link.swift in Sources */,
+				DA55595B1C1303FA00A5F8D6 /* ManagedFacebookPostRefresh.swift in Sources */,
 				DA9622D51BE542E700096592 /* PartyController.swift in Sources */,
 				DA2FE4811BD81D460006D9C6 /* Search_MapController.swift in Sources */,
+				DA55595D1C130AF400A5F8D6 /* NSDate.swift in Sources */,
 				DAA44B141BBAFC440045B7F0 /* Base_MapController.swift in Sources */,
 				DA9B53931BEA9DA300D90BFE /* LinkTableViewCell.swift in Sources */,
 				DA9622D71BE5686800096592 /* FacebookPostTableViewCell.swift in Sources */,
@@ -561,11 +586,13 @@
 				DAED64131BBC6ABD0042355F /* Colors.swift in Sources */,
 				DAA44B481BBB03D90045B7F0 /* Building.swift in Sources */,
 				DA9B53911BEA9B3D00D90BFE /* LinksController.swift in Sources */,
-				DAF9CC301BEE1DAE00AFA667 /* FacebookPost.swift in Sources */,
+				DAF9CC301BEE1DAE00AFA667 /* ManagedFacebookPost.swift in Sources */,
 				DAA44B121BBAFC440045B7F0 /* AppDelegate.swift in Sources */,
 				DAF9CC2E1BEE1C4500AFA667 /* FacebookPostsController.swift in Sources */,
 				DAF9CC321BEE1E4C00AFA667 /* FacebookGraphAPI.swift in Sources */,
 				DAF9CC341BEE1EAF00AFA667 /* FacebookConfig.swift in Sources */,
+				DA5559601C1313AC00A5F8D6 /* FacebookPost.swift in Sources */,
+				DA5559571C12F53C00A5F8D6 /* Models.xcdatamodeld in Sources */,
 				DA41EEBD1BD022F30025CDDC /* BuildingController.swift in Sources */,
 				DA2FE33E1BCA546800E881BB /* AboutController.swift in Sources */,
 				DA9B53991BEAA8A900D90BFE /* Json.swift in Sources */,
@@ -573,6 +600,7 @@
 				DA2FE4831BD81E060006D9C6 /* Map_MapController.swift in Sources */,
 				DA41EEBF1BD029E20025CDDC /* TopAlignedLabel.swift in Sources */,
 				DA642BA71BE6B32100301E62 /* EventController.swift in Sources */,
+				DA5559591C12F78300A5F8D6 /* FacebookPosts.swift in Sources */,
 				DAA44B4A1BBB0C680045B7F0 /* Buildings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -829,6 +857,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DA5559551C12F53C00A5F8D6 /* Models.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA5559561C12F53C00A5F8D6 /* Models.xcdatamodel */,
+			);
+			currentVersion = DA5559561C12F53C00A5F8D6 /* Models.xcdatamodel */;
+			path = Models.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DAA44B061BBAFC440045B7F0 /* Project object */;
 }

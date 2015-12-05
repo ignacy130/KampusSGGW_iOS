@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="ManagedFacebookPost" representedClassName="KampusSGGW.ManagedFacebookPost" syncable="YES">
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ManagedFacebookPostRefresh" representedClassName="KampusSGGW.ManagedFacebookPostRefresh" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="pageId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ManagedFacebookPost" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="ManagedFacebookPostRefresh" positionX="-54" positionY="27" width="128" height="75"/>
+    </elements>
+</model>

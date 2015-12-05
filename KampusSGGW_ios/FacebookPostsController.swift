@@ -11,11 +11,12 @@ import UIKit
 class FacebookPostsController : UITableViewController{
     var pageId: String?
     var posts = [FacebookPost]()
+    var postsRepository = FacebookPosts.getInstance()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.refreshControl?.addTarget(self, action: "getPosts", forControlEvents: .ValueChanged)
+        self.refreshControl?.addTarget(self, action: "refreshPosts", forControlEvents: .ValueChanged)
         getPosts()
     }
     
@@ -26,16 +27,29 @@ class FacebookPostsController : UITableViewController{
     }
     
     func getPosts(){
+        guard pageId != nil else{
+            return
+        }
+        
+        let shouldRefresh = postsRepository.shouldRefresh(pageId!)
+        if shouldRefresh{
+            print("REFRESH")
+            refreshPosts()
+        }
+        else{
+            print("LOAD")
+            posts = postsRepository.load(pageId!)
+            endRefresh()
+        }
+    }
+    
+    func refreshPosts(){
         if posts.count == 0{
             if let height = self.refreshControl?.frame.size.height{
                 self.tableView.setContentOffset(CGPointMake(0, -height), animated: true)
             }
         }
         self.refreshControl?.beginRefreshing()
-        
-        guard pageId != nil else{
-            return
-        }
         
         FacebookGraphAPI.getPosts(pageId!, successCallback: self.postsDownloadedCallback, failureCallback: self.showMessageBecauseErrorOccured)
     }
@@ -55,7 +69,13 @@ class FacebookPostsController : UITableViewController{
     }
     
     func postsDownloadedCallback(posts: [FacebookPost]){
+        postsRepository.save(pageId!, posts: posts)
+        postsRepository.markRefresh(pageId!)
         self.posts = posts
+        endRefresh()
+    }
+    
+    func endRefresh(){
         self.tableView.reloadData()
         self.refreshControl?.endRefreshing()
     }
